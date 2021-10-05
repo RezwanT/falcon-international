@@ -1,0 +1,754 @@
+@each $width in $responsive-width {
+  @media screen and (max-width: #{$width}px) {
+    section {
+      &.header {
+        .topnav {
+          .navbar {
+            @if ($width >= 768) {
+              height: 100px;
+            }
+            .navbar-toggler {
+              @if ($width >= 768) {
+                i {
+                  font-size: 35px;
+                  padding-top: 30px;
+                }
+              }
+            }
+
+            .mobile-view-navbar-brand {
+              @if ($width >= 768) {
+                display: block;
+              }
+
+              a {
+                img {
+                  @if ($width >= 767) {
+                    width: 55px;
+                    height: auto;
+                  }
+                }
+              }
+            }
+
+            .call-us {
+              @if ($width >= 768) {
+                left: 3.5%;
+              } @else if($width >= 414) {
+                left: 6.5%;
+              }
+            }
+
+            .container {
+              .collapse {
+                &.show {
+                  .navbar-nav {
+                    .nav-item {
+                      .nav-link {
+                        color: #000000;
+                      }
+                    }
+                  }
+                }
+
+                .navbar-brand {
+                  @if ($width >= 768) {
+                    display: none;
+                  }
+                  img {
+                  }
+                }
+              }
+            }
+
+            .mobile-nav {
+              ul {
+                @if ($width >= 768) {
+                  padding-top: 30px;
+                  padding-bottom: 30px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                }@else if($width >= 768){
+                  padding-top: 20px;
+                  padding-bottom: 20px;
+                }
+
+                li {
+                  @if ($width >= 768) {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                  }@else if($width >= 414){
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                  }
+
+                  a {
+                    @if ($width >= 768) {
+                      font-family: "Poppin SemiBold";
+                      color: #000000;
+                      line-height: 51px;
+                      letter-spacing: 1.37px;
+                      font-size: 28px;
+                    }@else if($width >= 414){
+                      font-size: 16px;
+                    }
+                  }
+                }
+              }
+              .nav-close-button {
+                position: absolute;
+                right: 3%;
+                top: 2%;
+                i {
+                  @if($width >= 768){
+                    font-size: 52px;
+                  }@else if($width >= 414){
+                    font-size: 26px;
+                  }
+                 
+                }
+              }
+            }
+          }
+        }
+
+        .bannar-section {
+          .background-bannar {
+            height: 60vh;
+            .background-layer {
+              .carousel {
+                ol {
+                  li {
+                  }
+                }
+
+                .carousel-inner {
+                  .carousel-item {
+                    &.active {
+                    }
+
+                    .cr-bannar-layer {
+                      .cr-bannar-body {
+                        .sm-title {
+                          @if ($width >= 768) {
+                            font-size: 12px;
+                            padding-bottom: 15px;
+                          }
+                        }
+                        .big-title {
+                          @if ($width >= 768) {
+                            font-size: 26px;
+                            line-height: 45px;
+                          }
+                        }
+                        .sub-title {
+                          @if ($width >= 767) {
+                            font-size: 14px;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            line-height: 25px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.about-us {
+        padding-top: #{make_for_mobile($width, 105)}px;
+        padding-bottom: #{make_for_mobile($width, 105)}px;
+
+        .title {
+          font-size: 18px;
+          line-height: 35px;
+          &::after {
+            @if ($width >= 767) {
+              left: 48%;
+            }
+          }
+        }
+
+        .subtitle {
+          @if ($width >= 768) {
+            font-size: 14px;
+            line-height: 22px;
+          } @else if($width >= 424) {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
+
+        .body {
+          .bg-texture {
+            .container {
+              .row {
+                .col-sm-12 {
+                  .image-section {
+                    @if ($width >= 768) {
+                      display: flex;
+                      justify-content: center;
+                    }
+                    img {
+                      width: 100%;
+                    }
+                  }
+
+                  .text-section {
+                    text-align: center;
+                    .subtitle {
+                      @if ($width >= 768) {
+                        text-align: center;
+                      }
+                      &::after {
+                        @if ($width >= 768) {
+                          top: 20%;
+                          //   right: 40%;
+                          left: 55%;
+                        } @else if($width >= 414) {
+                          top: 15%;
+                          left: 57%;
+                        }
+                      }
+                    }
+                    .ab-title {
+                      font-size: 14px;
+                    }
+                    .ab-body {
+                      font-size: 12px;
+                    }
+
+                    .read-more-sec {
+                      a {
+                        span {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.our-services {
+        padding-top: #{make_for_mobile($width, 105)}px;
+        padding-bottom: #{make_for_mobile($width, 105)}px;
+
+        .title {
+          @if ($width >= 767) {
+            line-height: 35px;
+            font-size: 18px;
+          }
+
+          &::after {
+            @if ($width >= 767) {
+              left: 48%;
+            }
+          }
+        }
+        .subtitle {
+          @if ($width >= 767) {
+            font-size: 14px;
+            line-height: 20px;
+          } @else if($width >= 424) {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
+
+        .services-with-image-section {
+          .container {
+            .row {
+              .col-sm-12 {
+                .services {
+                  &.services-truck {
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    margin-bottom: 15px;
+                  }
+
+                  &.services-oiltanker {
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    margin-bottom: 15px;
+                  }
+
+                  &.services-cargo {
+                    margin-right: 0px;
+                    margin-left: 0px;
+                  }
+
+                  .service-layer {
+                    .content {
+                      .logo {
+                        img {
+                        }
+                      }
+
+                      .text {
+                        @if ($width >= 767) {
+                          font-size: 16px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // reason to choose us
+      &.reason-to-choose {
+        background-color: #c1d4d7;
+
+        .all-services-count-section {
+          .container {
+            background-color: #d1dfe0;
+            padding-top: #{make_for_mobile($width, 105)}px;
+            padding-bottom: #{make_for_mobile($width, 105)}px;
+
+            .row {
+              .col-sm-12 {
+                .ser-section {
+                  .number {
+                    @if ($width >= 767) {
+                      font-size: 26px;
+                    }
+                  }
+                  .text {
+                    @if ($width >= 767) {
+                      font-size: 16px;
+                    }
+
+                    &::before {
+                      @if ($width >= 768) {
+                        bottom: 9%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .reason-to-choose-main {
+          flex-direction: column;
+          .left {
+            @if ($width >= 768) {
+              width: 100%;
+            }
+
+            @if ($width >= 768) {
+              padding-top: 230px;
+              padding-bottom: #{make_for_mobile($width, 105)}px;
+            }
+
+            .image-frame-section {
+              img {
+                width: 100%;
+                padding-left: 80px;
+                padding-right: 20px;
+              }
+            }
+          }
+          .right {
+            @if ($width >= 768) {
+              width: 100%;
+            }
+
+            @if ($width >= 768) {
+              padding-top: #{make_for_mobile($width, 105)}px;
+              padding-bottom: #{make_for_mobile($width, 105)}px;
+            }
+
+            .text-section {
+              padding-left: 30px;
+              .container {
+                .row {
+                  .col-12 {
+                    .sm-title {
+                      font-size: 12px;
+                    }
+
+                    .title {
+                      font-size: 14px;
+                    }
+
+                    .subtitle {
+                      font-size: 12px;
+                    }
+
+                    .body {
+                      .sections {
+                        .logo {
+                          img {
+                            @if ($width >= 767) {
+                              width: 20px;
+                            }
+                          }
+                        }
+                        .text {
+                          .title {
+                            font-size: 14px;
+                          }
+
+                          .in-text {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .title-subtitle {
+            top: 2%;
+            width: 100%;
+            left: 0%;
+            .re-title {
+              font-size: 18px;
+
+              &::after {
+              }
+            }
+            .subtitle {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      &.clients-day {
+        @if ($width >= 768) {
+          padding-top: #{make_for_mobile($width, 105)}px;
+          padding-bottom: #{make_for_mobile($width, 105)}px;
+        }
+
+        .cl-title {
+          font-size: 18px;
+
+          &::after {
+            @if ($width >= 767) {
+              top: 10%;
+            } @else if($width >= 414) {
+              top: 8%;
+              left: 48%;
+            }
+          }
+        }
+
+        .cl-subtitle {
+          @if ($width >= 768) {
+            font-size: 14px;
+          } @else if($width >= 424) {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
+
+        .clients-testimonial {
+          @if ($width >= 768) {
+            padding-top: #{make_for_mobile($width, 37)}px;
+            padding-bottom: #{make_for_mobile($width, 28)}px;
+            width: auto;
+            margin-left: 30px;
+            margin-right: 30px;
+          } @else if($width >= 414) {
+            margin-left: 20px;
+            margin-right: 20px;
+          }
+          .header {
+            display: flex;
+            margin-bottom: 40px;
+            .profile-image {
+              img {
+                width: 66px;
+                height: 66px;
+                border-radius: 50%;
+              }
+            }
+
+            .other-info {
+              padding-left: 23px;
+              .name {
+                font-size: 14px;
+              }
+              .designation {
+                font-size: 12px;
+              }
+            }
+          }
+
+          .body {
+            font-size: 12px;
+
+            &::before {
+              content: url(../vendor/images/home/testimonial-quotes.svg);
+              height: 33px;
+              width: 33px;
+              position: absolute;
+              right: 0;
+              top: -50%;
+            }
+          }
+        }
+      }
+
+      // all parters section
+      &.honorable-partners-section {
+        padding-top: #{make_for_mobile($width, 105)}px;
+        padding-bottom: #{make_for_mobile($width, 105)}px;
+
+        .title {
+          font-size: 18px;
+
+          &::after {
+            @if ($width >= 767) {
+              top: 10%;
+            } @else if($width >= 414) {
+              top: 4%;
+            }
+          }
+        }
+        .subtitle {
+          @if ($width >= 768) {
+            font-size: 14px;
+            margin-bottom: 0px;
+          } @else if($width >= 424) {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
+
+        .body {
+          padding-top: #{make_for_mobile($width, 90)}px;
+          padding-bottom: #{make_for_mobile($width, 90)}px;
+          padding-left: #{make_for_mobile($width, 90)}px;
+          padding-right: #{make_for_mobile($width, 90)}px;
+
+          .all-partners {
+            .pr-company-logo {
+              img {
+                width: auto;
+                height: 55px;
+              }
+            }
+          }
+        }
+      }
+
+      &.footer {
+        background-color: #526471;
+        color: #ffffff;
+
+        position: relative;
+
+        .newsletter-subscribtion {
+          width: auto;
+          @if ($width == 414) {
+            flex-direction: column;
+            height: 140px;
+          } @else if($width >= 767) {
+            flex-direction: row;
+          }
+
+          .left {
+            @if ($width == 414) {
+              width: 100%;
+              justify-content: center;
+              padding-bottom: 10px;
+            } @else if($width >= 767) {
+              width: 30%;
+            }
+
+            .title {
+              font-size: 16px;
+            }
+          }
+
+          .right {
+            @if ($width == 414) {
+              width: 100%;
+            } @else if($width >= 767) {
+              width: 70%;
+            }
+            form {
+              .input-group {
+                width: auto;
+                input {
+                }
+                .input-group-append {
+                  label {
+                    font-size: 14px;
+                    width: auto;
+                    height: auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .right-side-arrow {
+          position: absolute;
+          right: 2%;
+          top: 10%;
+
+          .arrowup {
+            #arrow-up {
+              cursor: pointer;
+              img {
+                width: 50px;
+                height: 50px;
+              }
+            }
+          }
+        }
+
+        .right-side-text {
+          @if ($width >= 767) {
+            right: 0%;
+            bottom: 10%;
+          }
+          .text {
+            @if ($width >= 767) {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .main-footer {
+          .container {
+            .row {
+              .col-sm-12 {
+                @if ($width >= 767) {
+                  padding-bottom: 20px;
+                }
+
+                .title {
+                  @if ($width >= 767) {
+                    font-size: 14px;
+                    padding-bottom: 5px;
+                  }
+                }
+                .subtitle {
+                  @if ($width >= 767) {
+                    font-size: 12px;
+                  }
+                }
+
+                hr {
+                }
+
+                .mobile {
+                  &.usa {
+                  }
+
+                  &.bangladesh {
+                  }
+
+                  .logo {
+                    img {
+                    }
+                  }
+                  .text {
+                  }
+                }
+
+                .social-logos {
+                  @if ($width >= 767) {
+                    margin-top: 20px;
+                  }
+
+                  .logo {
+                    img {
+                    }
+                  }
+                }
+
+                .body {
+                  .section {
+                    display: flex;
+                    @if ($width >= 767) {
+                      margin-bottom: 15px;
+                    }
+
+                    .left {
+                      @if ($width >= 767) {
+                        margin-bottom: 20px;
+                      }
+
+                      .place-name-logo {
+                        .logo {
+                        }
+                        .place-name {
+                          @if ($width >= 767) {
+                            font-size: 12px;
+                          }
+                        }
+                      }
+                    }
+
+                    .right {
+                      .address {
+                      }
+                      .cell {
+                        .logo {
+                        }
+                        .text {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .last-footer {
+          @if ($width >= 767) {
+            padding-left: #{make_for_mobile($width, 120)}px;
+            padding-right: #{make_for_mobile($width, 120)}px;
+            flex-direction: column;
+            padding-bottom: 20px;
+            margin-top: #{make_for_mobile($width, 58)}px;
+          }
+
+          .left {
+            ul {
+              @if ($width >= 767) {
+                flex-wrap: wrap;
+              }
+
+              li {
+                @if ($width >= 767) {
+                  padding-right: 15px;
+                }
+
+                a {
+                  @if ($width >= 767) {
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

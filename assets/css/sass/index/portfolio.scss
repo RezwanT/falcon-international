@@ -1,0 +1,88 @@
+section {
+  &.our-recent-projects {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .title {
+      font-size: 32px;
+      font-family: "Poppin Bold";
+      color: #3b3b3b;
+      line-height: 58px;
+      letter-spacing: 2.3px;
+      text-align: center;
+      position: relative;
+      text-transform: uppercase;
+
+      &::after {
+        content: "";
+        background: #eb6551;
+        position: absolute;
+        bottom: 0;
+        left: 48%;
+        height: 5px;
+        width: 53px;
+      }
+    }
+
+    .subtitle {
+      font-family: "Roboto Regular";
+      font-size: 16px;
+      line-height: 31px;
+      color: #134322;
+      // padding-top: 23px;
+      text-align: center;
+      white-space: pre-line;
+    }
+
+    .our-recent-projects-body {
+        margin-top: 55px;
+      .container {
+        .row {
+          .col-sm-12 {
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            .main-card-project-body {
+              .image-section {
+                background-image: url("../vendor/images/Portfolio/Mask\ Group\ 352.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 348px;
+                width: auto;
+                background-position: center;
+                position: relative;
+
+                .info-sections {
+                  position: absolute;
+                  bottom: 0;
+                  background: #f2f2f2 0% 0% no-repeat padding-box;
+                  box-shadow: 0px 0px 12px #00000045;
+                  padding-left: 18px;
+                  padding-top: 8px;
+                  .date {
+                      font-size: 10px;
+                      line-height: 30px;
+                      font-family: "Poppin Bold";
+                      color: #EB6551;
+                  }
+
+                  .title {
+                      font-family: "Poppin Bold";
+                      font-size: 16px;
+                      line-height: 25px;
+                      color: #484141;
+                      text-align: left;
+                      &::after{
+                        content: "";
+                        background: none;
+                      }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

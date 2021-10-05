@@ -1,0 +1,1200 @@
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../vendor/fonts/Roboto/Roboto-Regular.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Roboto/Roboto-Regular.ttf") format("embedded-opentype"), url("../vendor/fonts/Roboto/Roboto-Regular.ttf") format("woff2"), url("../vendor/fonts/Roboto/Roboto-Regular.ttf") format("woff"), url("../vendor/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../vendor/fonts/Roboto/Roboto-Bold.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Roboto/Roboto-Bold.ttf") format("embedded-opentype"), url("../vendor/fonts/Roboto/Roboto-Bold.ttf") format("woff2"), url("../vendor/fonts/Roboto/Roboto-Bold.ttf") format("woff"), url("../vendor/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../vendor/fonts/Roboto/Roboto-Medium.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Roboto/Roboto-Medium.ttf") format("embedded-opentype"), url("../vendor/fonts/Roboto/Roboto-Medium.ttf") format("woff2"), url("../vendor/fonts/Roboto/Roboto-Medium.ttf") format("woff"), url("../vendor/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Poppin SemiBold";
+  src: url("../vendor/fonts/Poppins/Poppins-SemiBold.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Poppins/Poppins-SemiBold.ttf") format("embedded-opentype"), url("../vendor/fonts/Poppins/Poppins-SemiBold.ttf") format("woff2"), url("../vendor/fonts/Poppins/Poppins-SemiBold.ttf") format("woff"), url("../vendor/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "DM Sans Bold";
+  src: url("../vendor/fonts/Dmsans/DMSans-Bold.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Dmsans/DMSans-Bold.ttf") format("embedded-opentype"), url("../vendor/fonts/Dmsans/DMSans-Bold.ttf") format("woff2"), url("../vendor/fonts/Dmsans/DMSans-Bold.ttf") format("woff"), url("../vendor/fonts/Dmsans/DMSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "DM Sans Medium";
+  src: url("../vendor/fonts/Dmsans/DMSans-Medium.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Dmsans/DMSans-Medium.ttf") format("embedded-opentype"), url("../vendor/fonts/Dmsans/DMSans-Medium.ttf") format("woff2"), url("../vendor/fonts/Dmsans/DMSans-Medium.ttf") format("woff"), url("../vendor/fonts/Dmsans/DMSans-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "DM Sans Regular";
+  src: url("../vendor/fonts/Dmsans/DMSans-Regular.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Dmsans/DMSans-Regular.ttf") format("embedded-opentype"), url("../vendor/fonts/Dmsans/DMSans-Regular.ttf") format("woff2"), url("../vendor/fonts/Dmsans/DMSans-Regular.ttf") format("woff"), url("../vendor/fonts/Dmsans/DMSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Poppin Bold";
+  src: url("../vendor/fonts/Poppins/Poppins-Bold.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Poppins/Poppins-Bold.ttf") format("embedded-opentype"), url("../vendor/fonts/Poppins/Poppins-Bold.ttf") format("woff2"), url("../vendor/fonts/Poppins/Poppins-Bold.ttf") format("woff"), url("../vendor/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Poppin Regular";
+  src: url("../vendor/fonts/Poppins/Poppins-Regular.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Poppins/Poppins-Regular.ttf") format("embedded-opentype"), url("../vendor/fonts/Poppins/Poppins-Regular.ttf") format("woff2"), url("../vendor/fonts/Poppins/Poppins-Regular.ttf") format("woff"), url("../vendor/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Poppin Light";
+  src: url("../vendor/fonts/Poppins/Poppins-Light.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Poppins/Poppins-Light.ttf") format("embedded-opentype"), url("../vendor/fonts/Poppins/Poppins-Light.ttf") format("woff2"), url("../vendor/fonts/Poppins/Poppins-Light.ttf") format("woff"), url("../vendor/fonts/Poppins/Poppins-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Poppin Medium";
+  src: url("../vendor/fonts/Poppins/Poppins-Medium.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Poppins/Poppins-Medium.ttf") format("embedded-opentype"), url("../vendor/fonts/Poppins/Poppins-Medium.ttf") format("woff2"), url("../vendor/fonts/Poppins/Poppins-Medium.ttf") format("woff"), url("../vendor/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Poppin ExtraBold";
+  src: url("../vendor/fonts/Poppins/Poppins-ExtraBold.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Poppins/Poppins-ExtraBold.ttf") format("embedded-opentype"), url("../vendor/fonts/Poppins/Poppins-ExtraBold.ttf") format("woff2"), url("../vendor/fonts/Poppins/Poppins-ExtraBold.ttf") format("woff"), url("../vendor/fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Nunito Bold";
+  src: url("../vendor/fonts/nunito/Nunito-Bold.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/nunito/Nunito-Bold.ttf") format("embedded-opentype"), url("../vendor/fonts/nunito/Nunito-Bold.ttf") format("woff2"), url("../vendor/fonts/nunito/Nunito-Bold.ttf") format("woff"), url("../vendor/fonts/nunito/Nunito-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Nunito SemiBold";
+  src: url("../vendor/fonts/nunito/Nunito-SemiBold.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/nunito/Nunito-SemiBold.ttf") format("embedded-opentype"), url("../vendor/fonts/nunito/Nunito-SemiBold.ttf") format("woff2"), url("../vendor/fonts/nunito/Nunito-SemiBold.ttf") format("woff"), url("../vendor/fonts/nunito/Nunito-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+.home-page-body {
+  background-color: #f9f8f3;
+}
+
+section.header .topnav .navbar {
+  background-color: #fdfdfd !important;
+  height: 130px;
+}
+section.header .topnav .navbar .mobile-view-navbar-brand {
+  display: none;
+}
+section.header .topnav .navbar .container .collapse .navbar-nav .nav-item {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+section.header .topnav .navbar .container .collapse .navbar-nav .nav-item .nav-link {
+  font-family: "DM Sans Medium";
+  color: #000000;
+  line-height: 51px;
+  letter-spacing: 1.37px;
+}
+section.header .topnav .navbar .container .collapse .navbar-brand img {
+  width: 81px;
+  height: 93px;
+}
+section.header .topnav .navbar .mobile-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: 0.5s;
+}
+section.header .bannar-section .background-bannar {
+  height: 80vh;
+  background-image: url(../vendor/images/home/home-page-banner.svg);
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+section.header .bannar-section .background-bannar .background-layer {
+  width: 100%;
+  height: 100%;
+  background: #484141 0% 0% no-repeat padding-box;
+  opacity: 0.85;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+section.header .bannar-section .background-bannar .background-layer .container .row .col-sm-12 .carousel .carousel-inner .carousel-item .cr-bannar-layer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+section.header .bannar-section .background-bannar .background-layer .container .row .col-sm-12 .carousel .carousel-inner .carousel-item .cr-bannar-layer .cr-bannar-body {
+  height: 100%;
+  color: #ffffff;
+}
+section.header .bannar-section .background-bannar .background-layer .container .row .col-sm-12 .carousel .carousel-inner .carousel-item .cr-bannar-layer .cr-bannar-body .big-title {
+  font-family: "Nunito Bold";
+  font-size: 62px;
+  line-height: 85px;
+  text-transform: uppercase;
+}
+section.header .bannar-section .background-bannar .background-layer .container .row .col-sm-12 .carousel .carousel-inner .carousel-item .cr-bannar-layer .cr-bannar-body .big-title div {
+  font-size: 42px;
+  font-family: "Nunito Bold";
+  line-height: 57px;
+  text-transform: uppercase;
+}
+section.header .bannar-section .background-bannar .background-layer .container .row .col-sm-12 .carousel .carousel-inner .carousel-item .cr-bannar-layer .cr-bannar-body .sub-title {
+  font-family: "Nunito SemiBold";
+  font-size: 18px;
+  line-height: 27px;
+  text-align: justify;
+  white-space: pre-line;
+}
+section.header .bannar-section .background-bannar .background-layer .container .row .col-sm-12 .carousel .carousel-inner .carousel-item .cr-bannar-layer .cr-bannar-body .button {
+  height: 100px;
+}
+section.header .bannar-section .background-bannar .background-layer .container .row .col-sm-12 .carousel .carousel-inner .carousel-item .cr-bannar-layer .cr-bannar-body .button a {
+  border: 3px solid #e9d4d4;
+  font-family: "Nunito Bold";
+  font-size: 16px;
+  line-height: 22px;
+  color: #f2f2f2;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+section.about-us {
+  padding-top: 105px;
+  padding-bottom: 105px;
+  background-color: #fcfcfc;
+}
+section.about-us .title {
+  font-size: 32px;
+  font-family: "Poppin Bold";
+  color: #3b3b3b;
+  line-height: 58px;
+  letter-spacing: 2.3px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+}
+section.about-us .title::after {
+  content: "";
+  background: #eb6551;
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  height: 5px;
+  width: 53px;
+}
+section.about-us .subtitle {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  line-height: 31px;
+  color: #134322;
+  text-align: center;
+  white-space: pre-line;
+}
+section.about-us .body {
+  margin-top: 57px;
+}
+section.about-us .body .bg-texture {
+  background: linear-gradient(rgba(252, 252, 252, 0.8), rgba(252, 252, 252, 0.8)), url(../vendor/images/home/about-us-texture.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.about-us .body .bg-texture .container .row .col-sm-12 .image-section img {
+  height: 485px;
+}
+section.about-us .body .bg-texture .container .row .col-sm-12 .text-section {
+  color: #3a3a3a;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+section.about-us .body .bg-texture .container .row .col-sm-12 .text-section .ab-title {
+  font-size: 22px;
+  line-height: 35px;
+  font-family: "DM Sans Bold";
+  color: #eb6551;
+}
+section.about-us .body .bg-texture .container .row .col-sm-12 .text-section .ab-body {
+  font-family: "Roboto Regular";
+  font-size: 14px;
+  line-height: 30px;
+  color: #484141;
+}
+section.about-us .body .bg-texture .container .row .col-sm-12 .text-section .ab-service {
+  padding-top: 15px;
+}
+section.about-us .body .bg-texture .container .row .col-sm-12 .text-section .ab-service .ab-ser-title {
+  font-family: "DM Sans Bold";
+  font-size: 22px;
+  color: #eb6551;
+  line-height: 30px;
+}
+section.about-us .body .bg-texture .container .row .col-sm-12 .text-section .ab-service .service-list ul {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+section.about-us .body .bg-texture .container .row .col-sm-12 .text-section .ab-service .service-list ul li {
+  font-size: 14px;
+  font-family: "Roboto Regular";
+  color: #484141;
+  list-style: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+section.about-us .body .bg-texture .container .row .col-sm-12 .text-section .read-more-sec {
+  height: 54px;
+}
+section.about-us .body .bg-texture .container .row .col-sm-12 .text-section .read-more-sec a {
+  background-color: #eb6551;
+  font-family: "DM Sans Bold";
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+section.our-offers .title {
+  font-family: "DM Sans Bold";
+  font-size: 32px;
+  line-height: 48px;
+  color: #3b3b3b;
+  text-align: center;
+  position: relative;
+}
+section.our-offers .title::after {
+  content: "";
+  background: #eb6551;
+  position: absolute;
+  bottom: -22%;
+  left: 48%;
+  height: 5px;
+  width: 53px;
+}
+section.our-offers .subtitle {
+  font-size: 16px;
+  font-family: "DM Sans Regular";
+  font-size: 16px;
+  line-height: 30px;
+  color: #134322;
+  white-space: pre-line;
+  text-align: center;
+}
+section.our-offers .our-offer-images-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+section.our-offers .our-offer-images-section .container .row .col-sm-12 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+section.our-offers .our-offer-images-section .container .row .col-sm-12 .offers .offer-layer {
+  background: linear-gradient(rgba(12, 12, 12, 0.65), rgba(12, 12, 12, 0.65)), url(../vendor/images/home/garments1.svg);
+  height: 200px;
+  width: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.our-offers .our-offer-images-section .container .row .col-sm-12 .offers .offer-layer .content .text {
+  font-size: 22px;
+  font-family: "DM Sans Bold";
+  line-height: 36px;
+  color: #f2f2f2;
+}
+section.why-clients-like-us .why-cl-layer {
+  background: linear-gradient(rgba(87, 87, 87, 0.85), rgba(87, 87, 87, 0.85)), url(../vendor/images/home/garments1.svg);
+  height: 630px;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.why-clients-like-us .why-cl-layer .wh-cl-title {
+  font-family: "DM Sans Bold";
+  font-size: 32px;
+  line-height: 48px;
+  color: #f2f2f2;
+  text-align: center;
+  position: relative;
+  text-align: center;
+  padding-bottom: 30px;
+}
+section.why-clients-like-us .why-cl-layer .wh-cl-title::after {
+  content: "";
+  background: #f2f2f2;
+  position: absolute;
+  bottom: 0%;
+  left: 48%;
+  height: 5px;
+  width: 53px;
+}
+section.why-clients-like-us .why-cl-layer .wh-cl-subtitle {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "DM Sans Regular";
+  color: #f2f2f2;
+  text-align: center;
+  padding-bottom: 30px;
+  white-space: pre-line;
+}
+section.why-clients-like-us .why-cl-layer .wh-cl-body .container .row .col-sm-12 .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section.why-clients-like-us .why-cl-layer .wh-cl-body .container .row .col-sm-12 .content .logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.why-clients-like-us .why-cl-layer .wh-cl-body .container .row .col-sm-12 .content .logo:hover {
+  background-color: #eb6551;
+}
+section.why-clients-like-us .why-cl-layer .wh-cl-body .container .row .col-sm-12 .content .title {
+  font-family: "DM Sans Bold";
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #f2f2f2;
+}
+section.why-clients-like-us .why-cl-layer .wh-cl-body .container .row .col-sm-12 .content .subtitle {
+  font-family: "Roboto Regular";
+  font-size: 12px;
+  line-height: 25px;
+  color: #f2f2f2;
+  text-align: center;
+}
+section.our-team {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+section.our-team .title {
+  font-family: "DM Sans Bold";
+  font-size: 32px;
+  line-height: 48px;
+  color: #3b3b3b;
+  text-align: center;
+  position: relative;
+}
+section.our-team .title::after {
+  content: "";
+  background: #eb6551;
+  position: absolute;
+  bottom: -22%;
+  left: 48%;
+  height: 5px;
+  width: 53px;
+}
+section.our-team .subtitle {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "DM Sans Regular";
+  color: #134322;
+  text-align: center;
+  padding-bottom: 30px;
+  white-space: pre-line;
+}
+section.our-team .team-body .container .row .col-sm-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.our-team .team-body .container .row .col-sm-12 .team-text-section .title {
+  font-family: "DM Sans Bold";
+  font-size: 22px;
+  line-height: 32px;
+  color: #eb6551;
+  padding-bottom: 30px;
+}
+section.our-team .team-body .container .row .col-sm-12 .team-text-section .title::after {
+  content: "";
+  background: #eb6551;
+  position: absolute;
+  top: -50%;
+  left: 0%;
+  height: 11px;
+  width: 45px;
+}
+section.our-team .team-body .container .row .col-sm-12 .team-text-section .content {
+  font-family: "Roboto Regular";
+  font-size: 14px;
+  line-height: 32px;
+  color: #484141;
+  padding-bottom: 30px;
+}
+section.our-team .team-body .container .row .col-sm-12 .team-text-section .join-us-button {
+  height: 100px;
+}
+section.our-team .team-body .container .row .col-sm-12 .team-text-section .join-us-button a {
+  background-color: #eb6551;
+  font-family: "DM Sans Bold";
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+section.testimonial .container {
+  background-color: #fdfdfc;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+section.testimonial .container .row .col-sm-12 .main-body .title {
+  font-family: "DM Sans Bold";
+  font-size: 32px;
+  line-height: 48px;
+  color: #3b3b3b;
+  text-align: center;
+  position: relative;
+}
+section.testimonial .container .row .col-sm-12 .main-body .title::after {
+  content: "";
+  background: #eb6551;
+  position: absolute;
+  bottom: -22%;
+  left: 48%;
+  height: 5px;
+  width: 53px;
+}
+section.testimonial .container .row .col-sm-12 .main-body .subtitle {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "DM Sans Regular";
+  color: #134322;
+  text-align: center;
+  padding-bottom: 30px;
+  white-space: pre-line;
+}
+section.testimonial .container .row .col-sm-12 .main-body .tes-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.testimonial .container .row .col-sm-12 .main-body .tes-body .header {
+  display: flex;
+  align-items: center;
+}
+section.testimonial .container .row .col-sm-12 .main-body .tes-body .header .name-designation {
+  text-align: left;
+}
+section.testimonial .container .row .col-sm-12 .main-body .tes-body .header .name-designation .name {
+  font-family: "Poppin Bold";
+  font-size: 18px;
+  line-height: 31px;
+  color: #000000;
+}
+section.testimonial .container .row .col-sm-12 .main-body .tes-body .header .name-designation .designation {
+  font-family: "Roboto Regular";
+  font-size: 14px;
+  line-height: 31px;
+  color: #888888;
+}
+section.testimonial .container .row .col-sm-12 .main-body .tes-body .body {
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+}
+section.testimonial .container .row .col-sm-12 .main-body .tes-body .body::after {
+  content: url(../vendor/images/home/testimonial_quotes.svg);
+  height: 33px;
+  width: 33px;
+  position: absolute;
+  /* right: 0; */
+  top: -50%;
+  left: 23%;
+}
+section.testimonial .container .row .col-sm-12 .main-body .tes-body .body .content {
+  text-align: center;
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  line-height: 31px;
+  color: #484141;
+}
+section.suppliers-and-partners {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+section.suppliers-and-partners .title {
+  font-family: "DM Sans Bold";
+  font-size: 32px;
+  line-height: 48px;
+  color: #3b3b3b;
+  text-align: center;
+  position: relative;
+}
+section.suppliers-and-partners .title::after {
+  content: "";
+  background: #eb6551;
+  position: absolute;
+  bottom: -22%;
+  left: 48%;
+  height: 5px;
+  width: 53px;
+}
+section.suppliers-and-partners .subtitle {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "DM Sans Regular";
+  color: #134322;
+  text-align: center;
+  padding-bottom: 30px;
+  white-space: pre-line;
+}
+section.suppliers-and-partners .body {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+section.suppliers-and-partners .body .all-parteners .image-partner {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.suppliers-and-partners .body .all-parteners .image-partner img {
+  width: 100px;
+  height: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+section.footer {
+  padding-top: 66px;
+}
+section.footer .main-footer {
+  display: flex;
+}
+section.footer .main-footer .left {
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #373737;
+}
+section.footer .main-footer .left .container .row .col-sm-12 .main-logo {
+  padding-top: 65px;
+  padding-bottom: 75px;
+}
+section.footer .main-footer .left .container .row .col-sm-12 .main-logo img {
+  height: 65px;
+  width: auto;
+}
+section.footer .main-footer .left .container .row .col-sm-12 .title {
+  font-family: "DM Sans Bold";
+  font-size: 18px;
+  line-height: 35px;
+  color: #ffffff;
+}
+section.footer .main-footer .left .container .row .col-sm-12 .subtitle {
+  font-family: "DM Sans Regular";
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+section.footer .main-footer .left .container .row .col-sm-12 hr {
+  background-color: #f2f2f2;
+}
+section.footer .main-footer .left .container .row .col-sm-12 .mobile {
+  font-family: "DM Sans Regular";
+  font-size: 12px;
+  line-height: 30px;
+  color: #ffffff;
+  display: flex;
+}
+section.footer .main-footer .left .container .row .col-sm-12 .mobile .logo {
+  padding-right: 10px;
+}
+section.footer .main-footer .left .container .row .col-sm-12 .mobile .logo img {
+  width: 15px;
+  height: auto;
+}
+section.footer .main-footer .left .container .row .col-sm-12 .mobile .text {
+  font-family: "DM Sans Regular";
+  font-size: 12px;
+  line-height: 30px;
+  color: #ffffff;
+}
+section.footer .main-footer .right {
+  background-color: #242424;
+  padding-right: 100px;
+  color: #FFFFFF;
+  padding-left: 100px;
+}
+section.footer .main-footer .right .container .row .col-sm-12 .newsletter-subscribtion {
+  margin-top: 65px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 15px 19px #12283970;
+  height: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+section.footer .main-footer .right .container .row .col-sm-12 .newsletter-subscribtion .title {
+  font-family: "DM Sans Regular";
+  font-size: 20px;
+  line-height: 34px;
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+section.footer .main-footer .right .container .row .col-sm-12 .newsletter-subscribtion .right {
+  background-color: #FFFFFF;
+}
+section.footer .main-footer .right .container .row .col-sm-12 .title {
+  font-family: "DM Sans Bold";
+  font-size: 18px;
+  line-height: 34px;
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+section.footer .main-footer .right .container .row .col-sm-12 .body .section {
+  display: flex;
+  padding-bottom: 20px;
+}
+section.footer .main-footer .right .container .row .col-sm-12 .body .section .left-sec {
+  padding-right: 20px;
+}
+section.footer .main-footer .right .container .row .col-sm-12 .body .section .left-sec .place-name-logo {
+  display: flex;
+  width: 100px;
+}
+section.footer .main-footer .right .container .row .col-sm-12 .body .section .left-sec .place-name-logo .logo {
+  padding-right: 10px;
+}
+section.footer .last-footer {
+  background-color: #212020;
+}
+section.footer .last-footer .left ul {
+  display: flex;
+}
+section.header .bannar-section .background-bannar-wt-home {
+  height: 70vh;
+  background-image: url(../vendor/images/aboutus/about-us-banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.header .bannar-section .background-bannar-wt-home .background-layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(72, 65, 65, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+section.header .bannar-section .background-bannar-wt-home .background-layer .subtitle {
+  font-family: "DM Sans Bold";
+  font-size: 14px;
+  line-height: 15px;
+  padding-bottom: 18px;
+}
+section.header .bannar-section .background-bannar-wt-home .background-layer .title {
+  font-family: "Poppin Bold";
+  font-size: 56px;
+  line-height: 85px;
+  padding-bottom: 18px;
+}
+section.header .bannar-section .background-bannar-wt-home .background-layer .page-name {
+  font-family: "DM Sans Bold";
+  font-size: 14px;
+  line-height: 15px;
+  padding-bottom: 18px;
+}
+section.about-our-company {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+section.about-our-company .title {
+  font-size: 32px;
+  font-family: "Poppin Bold";
+  color: #3b3b3b;
+  line-height: 58px;
+  letter-spacing: 2.3px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+}
+section.about-our-company .title::after {
+  content: "";
+  background: #eb6551;
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  height: 5px;
+  width: 53px;
+}
+section.about-our-company .subtitle {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  line-height: 31px;
+  color: #134322;
+  text-align: center;
+  white-space: pre-line;
+}
+section.about-our-company .main-image .container .row .col-12 img {
+  width: 100%;
+  height: 100%;
+}
+section.about-our-company .mission-vission {
+  padding-top: 100px;
+}
+section.about-our-company .mission-vission .container .row .col-sm-12 .section-mv {
+  background-color: #f0efec;
+  border: 3px solid #e1e1e1;
+  padding-left: 40px;
+  padding-right: 41px;
+  padding-top: 44px;
+  padding-bottom: 48px;
+}
+section.about-our-company .mission-vission .container .row .col-sm-12 .section-mv .header {
+  display: flex;
+}
+section.about-our-company .mission-vission .container .row .col-sm-12 .section-mv .header .logo {
+  padding-right: 25px;
+}
+section.about-our-company .mission-vission .container .row .col-sm-12 .section-mv .header .logo img {
+  width: 30px;
+  height: auto;
+}
+section.about-our-company .mission-vission .container .row .col-sm-12 .section-mv .header .title {
+  font-family: "Poppin ExtraBold";
+  font-size: 18px;
+  line-height: 30px;
+  color: #eb6551;
+}
+section.about-our-company .mission-vission .container .row .col-sm-12 .section-mv .header .title::after {
+  content: "";
+  background: none;
+}
+section.about-our-company .mission-vission .container .row .col-sm-12 .section-mv .content {
+  padding-top: 25px;
+  font-family: "Roboto Regular";
+  font-size: 12px;
+  line-height: 24px;
+  color: #232323;
+}
+section.about-our-company .lets-work-togeter {
+  margin-top: 20px;
+}
+section.about-our-company .lets-work-togeter .container .row .col-12 .work-together-body {
+  background: linear-gradient(rgba(241, 241, 241, 0.93), rgba(241, 241, 241, 0.93)), url(../vendor/images/aboutus/work-together.svg);
+  display: flex;
+  padding-left: 91px;
+  padding-right: 91px;
+  padding-top: 71px;
+  padding-bottom: 71px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+}
+section.about-our-company .lets-work-togeter .container .row .col-12 .work-together-body .left-wr-togther .title {
+  font-family: "Poppin ExtraBold";
+  font-size: 42px;
+  line-height: 132px;
+  color: #eb6551;
+  text-align: left;
+}
+section.about-our-company .lets-work-togeter .container .row .col-12 .work-together-body .left-wr-togther .title::after {
+  content: "";
+  background: none;
+}
+section.about-our-company .lets-work-togeter .container .row .col-12 .work-together-body .left-wr-togther .subtitle {
+  font-size: 12px;
+  line-height: 25px;
+  font-family: "Roboto Regular";
+  color: #232323;
+  text-align: left;
+}
+section.about-our-company .lets-work-togeter .container .row .col-12 .work-together-body .right-wr-togther {
+  padding-top: 50px;
+}
+section.about-our-company .lets-work-togeter .container .row .col-12 .work-together-body .right-wr-togther .contact-us a {
+  border: 3px solid #EB6551;
+  font-family: "DM Sans Bold";
+  font-size: 16px;
+  line-height: 21px;
+  color: #EB6551;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+section.core-team .title {
+  font-size: 32px;
+  font-family: "Poppin Bold";
+  color: #3b3b3b;
+  line-height: 58px;
+  letter-spacing: 2.3px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+}
+section.core-team .title::after {
+  content: "";
+  background: #eb6551;
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  height: 5px;
+  width: 53px;
+}
+section.core-team .subtitle {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  line-height: 31px;
+  color: #134322;
+  text-align: center;
+  white-space: pre-line;
+}
+section.core-team .body-core-team {
+  margin-top: 60px;
+}
+section.core-team .body-core-team .container .row .col-sm-12 .image-section img {
+  width: 100%;
+  height: auto;
+}
+section.core-team .body-core-team .container .row .col-sm-12 .info-section {
+  display: block;
+  position: relative;
+  bottom: 10%;
+  background-color: #EB6551;
+  padding-left: 11px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+section.core-team .body-core-team .container .row .col-sm-12 .info-section .title {
+  font-size: 16px;
+  line-height: 31px;
+  font-family: "Roboto Medium";
+  color: #F2F2F2;
+  text-align: left;
+}
+section.core-team .body-core-team .container .row .col-sm-12 .info-section .title::after {
+  content: "";
+  background: none;
+}
+section.core-team .body-core-team .container .row .col-sm-12 .info-section .designations {
+  font-size: 10px;
+  line-height: 31px;
+  font-family: "Roboto Medium";
+  color: #F2F2F2;
+}
+
+section.our-products {
+  padding-top: 100px;
+}
+section.our-products .title {
+  font-size: 32px;
+  font-family: "Poppin Bold";
+  color: #3b3b3b;
+  line-height: 58px;
+  letter-spacing: 2.3px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+}
+section.our-products .title::after {
+  content: "";
+  background: #eb6551;
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  height: 5px;
+  width: 53px;
+}
+section.our-products .subtitle {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  line-height: 31px;
+  color: #134322;
+  text-align: center;
+  white-space: pre-line;
+}
+section.our-products .our-products-body {
+  padding-top: 57px;
+}
+section.our-products .our-products-body .container .row .col-sm-12 .main-products-list {
+  background-color: #4F4F4F;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+section.our-products .our-products-body .container .row .col-sm-12 .main-products-list .title {
+  font-family: "DM Sans Bold";
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+  text-align: left;
+  padding-left: 20px;
+}
+section.our-products .our-products-body .container .row .col-sm-12 .main-products-list .title::after {
+  content: " ";
+  background: none;
+}
+section.our-products .our-products-body .container .row .col-sm-12 .main-products-list .lists ul {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+section.our-products .our-products-body .container .row .col-sm-12 .main-products-list .lists ul li {
+  background: rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
+  list-style: none;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+section.our-products .our-products-body .container .row .col-sm-12 .container .row .col-12 .sections {
+  margin-bottom: 55px;
+}
+section.our-products .our-products-body .container .row .col-sm-12 .container .row .col-12 .sections .title {
+  background-color: #F2F0E7;
+  font-family: "DM Sans Bold";
+  font-size: 20px;
+  line-height: 30px;
+  color: #EB6551;
+  text-align: left;
+  margin-bottom: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+section.our-products .our-products-body .container .row .col-sm-12 .container .row .col-12 .sections .title::after {
+  content: "";
+  background: none;
+}
+section.our-products .our-products-body .container .row .col-sm-12 .container .row .col-12 .sections .products .container .row .col-sm-12 {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+section.our-products .our-products-body .container .row .col-sm-12 .container .row .col-12 .sections .products .container .row .col-sm-12 img {
+  height: 150px;
+  width: 100%;
+}
+
+section.our-recent-projects {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+section.our-recent-projects .title {
+  font-size: 32px;
+  font-family: "Poppin Bold";
+  color: #3b3b3b;
+  line-height: 58px;
+  letter-spacing: 2.3px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+}
+section.our-recent-projects .title::after {
+  content: "";
+  background: #eb6551;
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  height: 5px;
+  width: 53px;
+}
+section.our-recent-projects .subtitle {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  line-height: 31px;
+  color: #134322;
+  text-align: center;
+  white-space: pre-line;
+}
+section.our-recent-projects .our-recent-projects-body {
+  margin-top: 55px;
+}
+section.our-recent-projects .our-recent-projects-body .container .row .col-sm-12 {
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+section.our-recent-projects .our-recent-projects-body .container .row .col-sm-12 .main-card-project-body .image-section {
+  background-image: url("../vendor/images/Portfolio/Mask Group 352.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 348px;
+  width: auto;
+  background-position: center;
+  position: relative;
+}
+section.our-recent-projects .our-recent-projects-body .container .row .col-sm-12 .main-card-project-body .image-section .info-sections {
+  position: absolute;
+  bottom: 0;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 12px #00000045;
+  padding-left: 18px;
+  padding-top: 8px;
+}
+section.our-recent-projects .our-recent-projects-body .container .row .col-sm-12 .main-card-project-body .image-section .info-sections .date {
+  font-size: 10px;
+  line-height: 30px;
+  font-family: "Poppin Bold";
+  color: #EB6551;
+}
+section.our-recent-projects .our-recent-projects-body .container .row .col-sm-12 .main-card-project-body .image-section .info-sections .title {
+  font-family: "Poppin Bold";
+  font-size: 16px;
+  line-height: 25px;
+  color: #484141;
+  text-align: left;
+}
+section.our-recent-projects .our-recent-projects-body .container .row .col-sm-12 .main-card-project-body .image-section .info-sections .title::after {
+  content: "";
+  background: none;
+}
+
+section.our-purpose {
+  padding-top: 100px;
+}
+section.our-purpose .our-pr-title {
+  font-size: 32px;
+  font-family: "Poppin Bold";
+  color: #3b3b3b;
+  line-height: 58px;
+  letter-spacing: 2.3px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+}
+section.our-purpose .our-pr-title::after {
+  content: "";
+  background: #eb6551;
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  height: 5px;
+  width: 53px;
+}
+section.our-purpose .our-pr-subtitle {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  line-height: 31px;
+  color: #134322;
+  text-align: center;
+  white-space: pre-line;
+}
+section.our-purpose .our-purpose-body {
+  padding-top: 90px;
+}
+section.our-purpose .our-purpose-body .container .row .col-sm-12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.our-purpose .our-purpose-body .container .row .col-sm-12 .text-section .pr-body-title {
+  font-family: "DM Sans Bold";
+  font-size: 22px;
+  line-height: 32px;
+  color: #EB6551;
+  padding-bottom: 30px;
+}
+section.our-purpose .our-purpose-body .container .row .col-sm-12 .text-section .pr-body-content {
+  font-family: "Roboto Regular";
+  font-size: 14px;
+  line-height: 32px;
+  color: #484141;
+  padding-bottom: 15px;
+}
+section.our-purpose .our-purpose-body .container .row .col-sm-12 .text-section .pr-body-current-openning {
+  font-family: "Poppin SemiBold";
+  font-size: 12px;
+  line-height: 58px;
+}
+section.our-purpose .our-purpose-body .container .row .col-sm-12 .text-section .pr-body-current-openning a {
+  color: #000000;
+}
+section.our-purpose .our-purpose-body .container .row .col-sm-12 .image-section img {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

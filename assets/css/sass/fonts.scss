@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../vendor/fonts/Roboto/Roboto-Regular.ttf'); /* IE9 Compat Modes */
+    src: url('../vendor/fonts/Roboto/Roboto-Regular.ttf') format('embedded-opentype'), /* IE6-IE8 */
+         url('../vendor/fonts/Roboto/Roboto-Regular.ttf') format('woff2'), /* Modern Browsers */
+         url('../vendor/fonts/Roboto/Roboto-Regular.ttf') format('woff'), /* Modern Browsers */
+         url('../vendor/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+  }
+
+  @font-face {
+     font-family: 'Roboto Bold';
+     src: url('../vendor/fonts/Roboto/Roboto-Bold.ttf'); /* IE9 Compat Modes */
+     src: url('../vendor/fonts/Roboto/Roboto-Bold.ttf') format('embedded-opentype'), /* IE6-IE8 */
+          url('../vendor/fonts/Roboto/Roboto-Bold.ttf') format('woff2'), /* Modern Browsers */
+          url('../vendor/fonts/Roboto/Roboto-Bold.ttf') format('woff'), /* Modern Browsers */
+          url('../vendor/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+     font-style: normal;
+     font-weight: normal;
+     text-rendering: optimizeLegibility;
+   }
+
+   @font-face {
+     font-family: 'Roboto Medium';
+     src: url('../vendor/fonts/Roboto/Roboto-Medium.ttf'); /* IE9 Compat Modes */
+     src: url('../vendor/fonts/Roboto/Roboto-Medium.ttf') format('embedded-opentype'), /* IE6-IE8 */
+          url('../vendor/fonts/Roboto/Roboto-Medium.ttf') format('woff2'), /* Modern Browsers */
+          url('../vendor/fonts/Roboto/Roboto-Medium.ttf') format('woff'), /* Modern Browsers */
+          url('../vendor/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+     font-style: normal;
+     font-weight: normal;
+     text-rendering: optimizeLegibility;
+   }
+
+
+
+  @font-face {
+    font-family: 'Poppin SemiBold';
+    src: url('../vendor/fonts/Poppins/Poppins-SemiBold.ttf'); /* IE9 Compat Modes */
+    src: url('../vendor/fonts/Poppins/Poppins-SemiBold.ttf') format('embedded-opentype'), /* IE6-IE8 */
+         url('../vendor/fonts/Poppins/Poppins-SemiBold.ttf') format('woff2'), /* Modern Browsers */
+         url('../vendor/fonts/Poppins/Poppins-SemiBold.ttf') format('woff'), /* Modern Browsers */
+         url('../vendor/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+  }
+
+  @font-face {
+    font-family: 'DM Sans Bold';
+    src: url('../vendor/fonts/Dmsans/DMSans-Bold.ttf'); /* IE9 Compat Modes */
+    src: url('../vendor/fonts/Dmsans/DMSans-Bold.ttf') format('embedded-opentype'), /* IE6-IE8 */
+         url('../vendor/fonts/Dmsans/DMSans-Bold.ttf') format('woff2'), /* Modern Browsers */
+         url('../vendor/fonts/Dmsans/DMSans-Bold.ttf') format('woff'), /* Modern Browsers */
+         url('../vendor/fonts/Dmsans/DMSans-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+  }
+
+  @font-face {
+     font-family: 'DM Sans Medium';
+     src: url('../vendor/fonts/Dmsans/DMSans-Medium.ttf'); /* IE9 Compat Modes */
+     src: url('../vendor/fonts/Dmsans/DMSans-Medium.ttf') format('embedded-opentype'), /* IE6-IE8 */
+          url('../vendor/fonts/Dmsans/DMSans-Medium.ttf') format('woff2'), /* Modern Browsers */
+          url('../vendor/fonts/Dmsans/DMSans-Medium.ttf') format('woff'), /* Modern Browsers */
+          url('../vendor/fonts/Dmsans/DMSans-Medium.ttf') format('truetype');
+     font-style: normal;
+     font-weight: normal;
+     text-rendering: optimizeLegibility;
+   }
+
+   @font-face {
+     font-family: 'DM Sans Regular';
+     src: url('../vendor/fonts/Dmsans/DMSans-Regular.ttf'); /* IE9 Compat Modes */
+     src: url('../vendor/fonts/Dmsans/DMSans-Regular.ttf') format('embedded-opentype'), /* IE6-IE8 */
+          url('../vendor/fonts/Dmsans/DMSans-Regular.ttf') format('woff2'), /* Modern Browsers */
+          url('../vendor/fonts/Dmsans/DMSans-Regular.ttf') format('woff'), /* Modern Browsers */
+          url('../vendor/fonts/Dmsans/DMSans-Regular.ttf') format('truetype');
+     font-style: normal;
+     font-weight: normal;
+     text-rendering: optimizeLegibility;
+   }
+
+
+  @font-face {
+    font-family: 'Poppin Bold';
+    src: url('../vendor/fonts/Poppins/Poppins-Bold.ttf'); /* IE9 Compat Modes */
+    src: url('../vendor/fonts/Poppins/Poppins-Bold.ttf') format('embedded-opentype'), /* IE6-IE8 */
+         url('../vendor/fonts/Poppins/Poppins-Bold.ttf') format('woff2'), /* Modern Browsers */
+         url('../vendor/fonts/Poppins/Poppins-Bold.ttf') format('woff'), /* Modern Browsers */
+         url('../vendor/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+  }
+
+  @font-face {
+     font-family: 'Poppin Regular';
+     src: url('../vendor/fonts/Poppins/Poppins-Regular.ttf'); /* IE9 Compat Modes */
+     src: url('../vendor/fonts/Poppins/Poppins-Regular.ttf') format('embedded-opentype'), /* IE6-IE8 */
+          url('../vendor/fonts/Poppins/Poppins-Regular.ttf') format('woff2'), /* Modern Browsers */
+          url('../vendor/fonts/Poppins/Poppins-Regular.ttf') format('woff'), /* Modern Browsers */
+          url('../vendor/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+     font-style: normal;
+     font-weight: normal;
+     text-rendering: optimizeLegibility;
+   }
+
+
+   @font-face {
+     font-family: 'Poppin Light';
+     src: url('../vendor/fonts/Poppins/Poppins-Light.ttf'); /* IE9 Compat Modes */
+     src: url('../vendor/fonts/Poppins/Poppins-Light.ttf') format('embedded-opentype'), /* IE6-IE8 */
+          url('../vendor/fonts/Poppins/Poppins-Light.ttf') format('woff2'), /* Modern Browsers */
+          url('../vendor/fonts/Poppins/Poppins-Light.ttf') format('woff'), /* Modern Browsers */
+          url('../vendor/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+     font-style: normal;
+     font-weight: normal;
+     text-rendering: optimizeLegibility;
+   }
+
+   @font-face {
+     font-family: 'Poppin Medium';
+     src: url('../vendor/fonts/Poppins/Poppins-Medium.ttf'); /* IE9 Compat Modes */
+     src: url('../vendor/fonts/Poppins/Poppins-Medium.ttf') format('embedded-opentype'), /* IE6-IE8 */
+          url('../vendor/fonts/Poppins/Poppins-Medium.ttf') format('woff2'), /* Modern Browsers */
+          url('../vendor/fonts/Poppins/Poppins-Medium.ttf') format('woff'), /* Modern Browsers */
+          url('../vendor/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+     font-style: normal;
+     font-weight: normal;
+     text-rendering: optimizeLegibility;
+   }
+
+   @font-face {
+     font-family: 'Poppin ExtraBold';
+     src: url('../vendor/fonts/Poppins/Poppins-ExtraBold.ttf'); /* IE9 Compat Modes */
+     src: url('../vendor/fonts/Poppins/Poppins-ExtraBold.ttf') format('embedded-opentype'), /* IE6-IE8 */
+          url('../vendor/fonts/Poppins/Poppins-ExtraBold.ttf') format('woff2'), /* Modern Browsers */
+          url('../vendor/fonts/Poppins/Poppins-ExtraBold.ttf') format('woff'), /* Modern Browsers */
+          url('../vendor/fonts/Poppins/Poppins-ExtraBold.ttf') format('truetype');
+     font-style: normal;
+     font-weight: normal;
+     text-rendering: optimizeLegibility;
+   }
+
+
+   @font-face {
+     font-family: 'Nunito Bold';
+     src: url('../vendor/fonts/nunito/Nunito-Bold.ttf'); /* IE9 Compat Modes */
+     src: url('../vendor/fonts/nunito/Nunito-Bold.ttf') format('embedded-opentype'), /* IE6-IE8 */
+          url('../vendor/fonts/nunito/Nunito-Bold.ttf') format('woff2'), /* Modern Browsers */
+          url('../vendor/fonts/nunito/Nunito-Bold.ttf') format('woff'), /* Modern Browsers */
+          url('../vendor/fonts/nunito/Nunito-Bold.ttf') format('truetype');
+     font-style: normal;
+     font-weight: normal;
+     text-rendering: optimizeLegibility;
+   }
+
+   @font-face {
+     font-family: 'Nunito SemiBold';
+     src: url('../vendor/fonts/nunito/Nunito-SemiBold.ttf'); /* IE9 Compat Modes */
+     src: url('../vendor/fonts/nunito/Nunito-SemiBold.ttf') format('embedded-opentype'), /* IE6-IE8 */
+          url('../vendor/fonts/nunito/Nunito-SemiBold.ttf') format('woff2'), /* Modern Browsers */
+          url('../vendor/fonts/nunito/Nunito-SemiBold.ttf') format('woff'), /* Modern Browsers */
+          url('../vendor/fonts/nunito/Nunito-SemiBold.ttf') format('truetype');
+     font-style: normal;
+     font-weight: normal;
+     text-rendering: optimizeLegibility;
+   }
+  
+
+  

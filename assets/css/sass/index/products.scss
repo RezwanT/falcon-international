@@ -1,0 +1,127 @@
+section {
+  &.our-products {
+      padding-top: 100px;
+    .title {
+      font-size: 32px;
+      font-family: "Poppin Bold";
+      color: #3b3b3b;
+      line-height: 58px;
+      letter-spacing: 2.3px;
+      text-align: center;
+      position: relative;
+      text-transform: uppercase;
+
+      &::after {
+        content: "";
+        background: #eb6551;
+        position: absolute;
+        bottom: 0;
+        left: 48%;
+        height: 5px;
+        width: 53px;
+      }
+    }
+
+    .subtitle {
+      font-family: "Roboto Regular";
+      font-size: 16px;
+      line-height: 31px;
+      color: #134322;
+      // padding-top: 23px;
+      text-align: center;
+      white-space: pre-line;
+    }
+
+    .our-products-body {
+        padding-top: 57px;
+      .container {
+        .row {
+          .col-sm-12 {
+            .main-products-list {
+                background-color: #4F4F4F;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                padding-left: 5px;
+                padding-right: 5px;
+              .title {
+                  font-family: "DM Sans Bold";
+                  font-size: 18px;
+                  line-height: 30px;
+                  color: #FFFFFF;
+                  padding-bottom: 25px;
+                  text-align: left;
+                  padding-left: 20px;
+
+                  &::after{
+                      content: " ";
+                      background: none;
+                  }
+              }
+
+              .lists {
+                ul {
+                    margin-left: 0px;
+                    padding-left: 0px;
+                  li {
+                    background: rgba(255, 255, 255, 0.3);
+                    color: #FFFFFF;
+                    list-style: none;
+                    margin-top: 7px;
+                    margin-bottom: 7px;
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                  }
+                }
+              }
+            }
+
+            .container {
+              .row {
+                .col-12 {
+                  .sections {
+                      margin-bottom: 55px;
+                    .title {
+                        background-color: #F2F0E7;
+                        font-family: "DM Sans Bold";
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: #EB6551;
+                        text-align: left;
+                        margin-bottom: 30px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-left: 15px;
+                        &::after{
+                            content: "";
+                            background: none;
+                        }
+                    }
+
+                    .products {
+                      .container {
+                        .row {
+                          .col-sm-12 {
+                              padding-top: 7px;
+                              padding-bottom: 7px;
+                              padding-left: 7px;
+                              padding-right: 7px;
+                            img {
+                                height: 150px;
+                                width: 100%;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

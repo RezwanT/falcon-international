@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.531" height="20.444" viewBox="0 0 16.531 20.444">
+  <g id="flag" transform="translate(-49)">
+    <path id="Path_2040" data-name="Path 2040" d="M83.981,2.556V1.491a1.491,1.491,0,0,0-2.981,0V5.364H94.975V2.556Z" transform="translate(-30.722)" fill="#eb6551"/>
+    <path id="Path_2041" data-name="Path 2041" d="M81,254v6.549h2.981v-3.74H94.975V254Z" transform="translate(-30.722 -243.858)" fill="#eb6551"/>
+    <path id="Path_2042" data-name="Path 2042" d="M81,164.333H94.975v2.382H81Z" transform="translate(-30.722 -157.771)" fill="#eb6551"/>
+    <path id="Path_2043" data-name="Path 2043" d="M59.97,409.6a3.727,3.727,0,0,0-3,1.533H49v2.556H65.531v-2.556H62.972A3.727,3.727,0,0,0,59.97,409.6Z" transform="translate(0 -393.248)" fill="#eb6551"/>
+  </g>
+</svg>
