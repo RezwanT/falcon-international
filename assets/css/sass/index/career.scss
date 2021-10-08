@@ -34,39 +34,37 @@ section {
     }
 
     .our-purpose-body {
-        padding-top: 90px;
+      padding-top: 90px;
       .container {
         .row {
           .col-sm-12 {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             .text-section {
               .pr-body-title {
-                  font-family: "DM Sans Bold";
-                  font-size: 22px;
-                  line-height: 32px;
-                  color: #EB6551;
-                  padding-bottom: 30px;
+                font-family: "DM Sans Bold";
+                font-size: 22px;
+                line-height: 32px;
+                color: #eb6551;
+                padding-bottom: 30px;
               }
-              
 
               .pr-body-content {
-                  font-family: "Roboto Regular";
-                  font-size: 14px;
-                  line-height: 32px;
-                  color: #484141;
-                  padding-bottom: 15px;
+                font-family: "Roboto Regular";
+                font-size: 14px;
+                line-height: 32px;
+                color: #484141;
+                padding-bottom: 15px;
               }
 
               .pr-body-current-openning {
                 font-family: "Poppin SemiBold";
                 font-size: 12px;
                 line-height: 58px;
-                a{
-                    color: #000000;
+                a {
+                  color: #000000;
                 }
-
               }
             }
 
@@ -74,6 +72,104 @@ section {
               img {
                 width: 100%;
                 height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.why-work-here {
+    padding-top: 100px;
+
+    .wh-title {
+      font-size: 32px;
+      font-family: "Poppin Bold";
+      color: #3b3b3b;
+      line-height: 58px;
+      letter-spacing: 2.3px;
+      text-align: center;
+      position: relative;
+      text-transform: uppercase;
+
+      &::after {
+        content: "";
+        background: #eb6551;
+        position: absolute;
+        bottom: 0;
+        left: 48%;
+        height: 5px;
+        width: 53px;
+      }
+    }
+
+    .wh-subtitle {
+      font-family: "Roboto Regular";
+      font-size: 16px;
+      line-height: 31px;
+      color: #134322;
+      // padding-top: 23px;
+      text-align: center;
+      white-space: pre-line;
+    }
+
+    .wh-body {
+      padding-top: 78px;
+      .container {
+        .row {
+          .col-sm-12 {
+            padding-left: 27px;
+            padding-right: 27px;
+            padding-top: 27px;
+            padding-bottom: 27px;
+            .wh-main-body {
+              background: linear-gradient(
+                  rgba(207, 207, 207, 0.94),
+                  rgba(207, 207, 207, 0.94)
+                ),
+                url(../vendor/images/career/better-facilities-background-image.png);
+
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+              height: 350px;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              padding-left: 27px;
+              padding-right: 27px;
+
+              .logo {
+                width: 65px;
+                height: 65px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 2px solid #eb6551;
+                margin-bottom: 30px;
+                img {
+                  width: 25px;
+                  height: auto;
+                }
+              }
+
+              .title {
+                font-family: "Poppin Bold";
+                font-size: 16px;
+                line-height: 30px;
+                color: #EB6551;
+                padding-bottom: 15px;
+              }
+
+              .content {
+                font-family: "Roboto Regular";
+                font-size: 12px;
+                line-height: 25px;
+                color: #3B3B3B;
               }
             }
           }

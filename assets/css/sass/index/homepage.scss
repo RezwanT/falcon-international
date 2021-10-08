@@ -1,5 +1,18 @@
 .home-page-body {
   background-color: #f9f8f3;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: url(../vendor/images/page_left_icon.svg);
+    background-repeat: no-repeat;
+
+    position: absolute;
+    bottom: 20%;
+    left: 0%;
+    height: 80px;
+    width: 35px;
+  }
 }
 
 section {
@@ -74,7 +87,21 @@ section {
               .col-sm-12 {
                 .carousel {
                   ol {
+                    transform: rotate(90deg);
+                    right: -20%;
+                    left: unset;
+                    top: 50%;
+                    bottom: unset;
+
                     li {
+                      width: 15px;
+                      height: 15px;
+                      border-radius: 50%;
+                      margin-left: 10px;
+                      margin-right: 10px;
+                      &.active{
+                        background-color: #EB6551;
+                      }
                     }
                   }
 
@@ -326,6 +353,19 @@ section {
                     font-family: "DM Sans Bold";
                     line-height: 36px;
                     color: #f2f2f2;
+                    cursor: pointer;
+                    position: relative;
+                    &:hover{
+                      &::after{
+                        content: "";
+                        background: #eb6551;
+                        position: absolute;
+                        bottom: -22%;
+                        left: 0%;
+                        height: 3px;
+                        width: 65px;
+                      }
+                    }
                   }
                 }
               }
@@ -482,6 +522,7 @@ section {
             align-items: center;
             justify-content: center;
             .image-section {
+              padding-right: 50px;
               img {
               }
             }
@@ -493,6 +534,7 @@ section {
                 line-height: 32px;
                 color: #eb6551;
                 padding-bottom: 30px;
+                text-align: left;
 
                 &::after {
                   content: "";
@@ -538,6 +580,21 @@ section {
       background-color: #fdfdfc;
       padding-top: 100px;
       padding-bottom: 100px;
+      background-image: url(../vendor/images/home/testimonial-background.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      position: relative;
+      &::after {
+        content: "";
+        background: url(../vendor/images/page_left_icon.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20%;
+        right: -3%;
+        height: 80px;
+        width: 35px;
+      }
       .row {
         .col-sm-12 {
           .main-body {
@@ -634,6 +691,17 @@ section {
   &.suppliers-and-partners {
     padding-top: 100px;
     padding-bottom: 100px;
+    position: relative;
+    &::after{
+      content: "";
+      background: url(../vendor/images/home/supply-partners-top-icon.svg);
+      position: absolute;
+      top: 0;
+      right: 15%;
+      background-repeat: no-repeat;
+      width: 250px;
+      height: 200px;
+    }
     .title {
       font-family: "DM Sans Bold";
       font-size: 32px;
@@ -771,7 +839,7 @@ section {
       .right {
         background-color: #242424;
         padding-right: 100px;
-        color: #FFFFFF;
+        color: #ffffff;
         padding-left: 100px;
 
         .container {
@@ -779,30 +847,57 @@ section {
             .col-sm-12 {
               .newsletter-subscribtion {
                 margin-top: 65px;
-                background-color: #FFFFFF;
+                background-color: #ffffff;
                 box-shadow: 0px 15px 19px #12283970;
                 height: auto;
                 padding-left: 32px;
                 padding-right: 32px;
                 padding-top: 18px;
                 padding-bottom: 18px;
-                
-                
-                  .title {
-                    font-family: "DM Sans Regular";
-                    font-size: 20px;
-                    line-height: 34px;
-                    color: #000000;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                  }
-              
+
+                .title {
+                  font-family: "DM Sans Regular";
+                  font-size: 20px;
+                  line-height: 34px;
+                  color: #000000;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                }
 
                 .right {
-                  background-color: #FFFFFF;
+                  background-color: rgba(255, 255, 255, .8);
+                  padding-left: 0px;
+                  padding-right: 0px;
+
+
                   form {
                     .input-group {
+                      width: 455px;
+                      border-radius: 5px;
+                      
                       input {
+                        height: 65px;
+                        background-color: rgba(93, 55, 55, .18);
+                        &::placeholder{
+                          font-size: 18px;
+                          font-family: "DM Sans Bold";
+                          line-height: 34px;
+                          color: #F2F2F2;
+                        }
+
+                      }
+                      div{
+                        label{
+                          background-color: rgba(235, 101, 81, .8);
+                          padding-top: 11px;
+                          padding-bottom: 11px;
+                          padding-left: 25px;
+                          padding-right: 25px;
+                          color: #FFFFFF;
+                          font-family: "DM Sans Bold";
+                          font-size: 18px;
+                          line-height: 34px;
+                        }
                       }
                     }
                   }
@@ -810,7 +905,6 @@ section {
               }
 
               .title {
-
                 font-family: "DM Sans Bold";
                 font-size: 18px;
                 line-height: 34px;
@@ -824,22 +918,19 @@ section {
                   // align-items: center;
                   padding-bottom: 20px;
 
-
                   .left-sec {
                     padding-right: 20px;
                     .place-name-logo {
-                       display: flex;
-                       width: 100px;
+                      display: flex;
+                      width: 100px;
                       .logo {
-
                         padding-right: 10px;
 
                         img {
                         }
                       }
 
-                      .place-name{
-
+                      .place-name {
                       }
                     }
                   }
@@ -856,6 +947,20 @@ section {
                   }
                 }
               }
+
+              .social-links{
+                margin-top: 50px;
+                margin-bottom: 40px;
+              
+                .links{
+                  display: flex;
+                  img{
+                    padding-right: 26px;
+                    width: auto;
+                    height: 23px;
+                  }
+                }
+              }
             }
           }
         }
@@ -864,15 +969,37 @@ section {
 
     .last-footer {
       background-color: #212020;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 145px;
+      padding-right: 145px;
 
       .left {
         ul {
           display: flex;
+          padding-left: 0px;
+          margin-left: 0px;
           li {
+            padding-left: 10px;
+            padding-right: 10px;
+            list-style: none;
             a {
+              font-family: "Poppin SemiBold";
+              font-size: 14px;
+              line-height: 51px;
+              color: #F5F5F5;
+              text-decoration: none;
             }
           }
         }
+      }
+      .right{
+        color: #FFFFFF;
+        font-family: "Poppin Regular";
+        font-size: 16px;
+        line-height: 50px;
+
       }
     }
   }

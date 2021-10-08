@@ -1,0 +1,222 @@
+@each $width in $responsive-width {
+  @media screen and (max-width: #{$width}px) {
+    section {
+      &.header {
+        .bannar-section {
+          .background-bannar-wt-home {
+            .background-layer {
+              .subtitle {
+              }
+              .title {
+                @if ($width >= 767) {
+                  font-size: 26px;
+                  line-height: 46px;
+                }
+              }
+
+              .page-name {
+                @if ($width >= 767) {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.about-our-company {
+        @if ($width >= 767) {
+          padding-top: #{make_for_mobile($width, 105)}px;
+          padding-bottom: #{make_for_mobile($width, 105)}px;
+        }
+
+        .title {
+          @if ($width >= 767) {
+            font-size: 18px;
+            line-height: 48px;
+          }
+
+          &::after {
+          }
+        }
+
+        .subtitle {
+          @if ($width >= 767) {
+            font-size: 14px;
+            padding-left: 30px;
+            padding-right: 30px;
+          }
+        }
+
+        .main-image {
+          .container {
+            .row {
+              .col-12 {
+                img {
+                }
+              }
+            }
+          }
+        }
+
+        .mission-vission {
+          padding-top: #{make_for_mobile($width, 105)}px;
+          .container {
+            .row {
+              .col-sm-12 {
+                @if ($width >= 767) {
+                  padding-bottom: 20px;
+                  padding-top: 20px;
+                }
+                .section-mv {
+                  @if ($width >= 767) {
+                    padding-right: 20px;
+                    padding-left: 20px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                  }
+
+                  &.our-mission {
+                  }
+
+                  .header {
+                    .logo {
+                      img {
+                      }
+                    }
+
+                    .title {
+                      @if ($width >= 767) {
+                        font-size: 14px;
+                      }
+
+                      &::after {
+                        content: "";
+                        background: none;
+                      }
+                    }
+                  }
+
+                  .content {
+                    @if ($width >= 767) {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .lets-work-togeter {
+          .container {
+            .row {
+              .col-12 {
+                .work-together-body {
+                  @if ($width >= 767) {
+                    padding-left: #{make_for_mobile($width, 91)}px;
+                    padding-right: #{make_for_mobile($width, 91)}px;
+                    padding-top: #{make_for_mobile($width, 91)}px;
+                    padding-bottom: #{make_for_mobile($width, 91)}px;
+                    flex-direction: column;
+                  }
+
+                  // align-items: center;
+                  justify-content: space-between;
+
+                  .left-wr-togther {
+                    .title {
+                      @if ($width >= 767) {
+                        font-size: 26px;
+                        line-height: 80px;
+                      }
+
+                      &::after {
+                      }
+                    }
+
+                    .subtitle {
+                    }
+                  }
+
+                  .right-wr-togther {
+                    @if ($width >= 767) {
+                      padding-top: 60px;
+                    }
+
+                    .contact-us {
+                      a {
+                        @if ($width >= 767) {
+                          font-size: 14px;
+                          padding-left: 15px;
+                          padding-right: 15px;
+                          padding-top: 10px;
+                          padding-bottom: 10px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @if ($width >= 767) {
+            margin-top: 10px;
+          }
+        }
+      }
+
+      &.core-team {
+        .title {
+          @if ($width >= 767) {
+            font-size: 18px;
+            line-height: 48px;
+          }
+
+          &::after {
+          }
+        }
+
+        .subtitle {
+          @if ($width >= 767) {
+            font-size: 14px;
+            line-height: 30px;
+          }
+        }
+
+        .body-core-team {
+          @if ($width >= 767) {
+            margin-top: #{make_for_mobile($width, 60)}px;
+          }
+
+          .container {
+            .row {
+              .col-sm-12 {
+                .image-section {
+                  img {
+                  }
+                }
+
+                .info-section {
+                  .title {
+                    @if ($width >= 767) {
+                      font-size: 14px;
+                      line-height: 30px;
+                    }
+
+                    &::after {
+                     
+                    }
+                  }
+
+                  .designations {
+                   
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

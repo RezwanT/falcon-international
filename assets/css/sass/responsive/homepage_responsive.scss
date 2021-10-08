@@ -1,154 +1,163 @@
 @each $width in $responsive-width {
   @media screen and (max-width: #{$width}px) {
+    .home-page-body {
+      background-color: #f9f8f3;
+      position: relative;
+
+      &::after {
+        content: "";
+        background: url(../vendor/images/page_left_icon.svg);
+        background-repeat: no-repeat;
+
+        position: absolute;
+        bottom: 20%;
+        left: 0%;
+        height: 80px;
+        width: 35px;
+      }
+    }
+
     section {
       &.header {
         .topnav {
           .navbar {
-            @if ($width >= 768) {
-              height: 100px;
-            }
+            background-color: #fdfdfd !important;
+            height: 130px;
             .navbar-toggler {
-              @if ($width >= 768) {
-                i {
-                  font-size: 35px;
-                  padding-top: 30px;
-                }
-              }
             }
 
             .mobile-view-navbar-brand {
-              @if ($width >= 768) {
-                display: block;
-              }
-
-              a {
-                img {
-                  @if ($width >= 767) {
-                    width: 55px;
-                    height: auto;
-                  }
-                }
-              }
-            }
-
-            .call-us {
-              @if ($width >= 768) {
-                left: 3.5%;
-              } @else if($width >= 414) {
-                left: 6.5%;
-              }
+              display: none;
             }
 
             .container {
               .collapse {
-                &.show {
-                  .navbar-nav {
-                    .nav-item {
-                      .nav-link {
-                        color: #000000;
-                      }
+                .navbar-nav {
+                  .nav-item {
+                    padding-left: 7px;
+                    padding-right: 7px;
+                    .nav-link {
+                      font-family: "DM Sans Medium";
+                      color: #000000;
+                      line-height: 51px;
+                      letter-spacing: 1.37px;
                     }
                   }
                 }
-
                 .navbar-brand {
-                  @if ($width >= 768) {
-                    display: none;
-                  }
                   img {
+                    width: 81px;
+                    height: 93px;
                   }
                 }
               }
             }
 
             .mobile-nav {
-              ul {
-                @if ($width >= 768) {
-                  padding-top: 30px;
-                  padding-bottom: 30px;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                }@else if($width >= 768){
-                  padding-top: 20px;
-                  padding-bottom: 20px;
-                }
-
-                li {
-                  @if ($width >= 768) {
-                    padding-top: 15px;
-                    padding-bottom: 15px;
-                  }@else if($width >= 414){
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                  }
-
-                  a {
-                    @if ($width >= 768) {
-                      font-family: "Poppin SemiBold";
-                      color: #000000;
-                      line-height: 51px;
-                      letter-spacing: 1.37px;
-                      font-size: 28px;
-                    }@else if($width >= 414){
-                      font-size: 16px;
-                    }
-                  }
-                }
-              }
-              .nav-close-button {
-                position: absolute;
-                right: 3%;
-                top: 2%;
-                i {
-                  @if($width >= 768){
-                    font-size: 52px;
-                  }@else if($width >= 414){
-                    font-size: 26px;
-                  }
-                 
-                }
-              }
+              height: 100%;
+              width: 0;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              background-color: #ffffff;
+              overflow: hidden;
+              transition: 0.5s;
             }
           }
         }
 
         .bannar-section {
           .background-bannar {
-            height: 60vh;
+            height: 80vh;
+            background-image: url(../vendor/images/home/home-page-banner.svg);
+            background-position: center;
+            object-fit: cover;
+            background-repeat: no-repeat;
+
             .background-layer {
-              .carousel {
-                ol {
-                  li {
-                  }
-                }
+              width: 100%;
+              height: 100%;
+              background: #484141 0% 0% no-repeat padding-box;
+              opacity: 0.85;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
 
-                .carousel-inner {
-                  .carousel-item {
-                    &.active {
-                    }
+              .container {
+                .row {
+                  .col-sm-12 {
+                    .carousel {
+                      ol {
+                        transform: rotate(90deg);
+                        right: -20%;
+                        left: unset;
+                        top: 50%;
+                        bottom: unset;
 
-                    .cr-bannar-layer {
-                      .cr-bannar-body {
-                        .sm-title {
-                          @if ($width >= 768) {
-                            font-size: 12px;
-                            padding-bottom: 15px;
+                        li {
+                          width: 15px;
+                          height: 15px;
+                          border-radius: 50%;
+                          margin-left: 10px;
+                          margin-right: 10px;
+                          &.active {
+                            background-color: #eb6551;
                           }
                         }
-                        .big-title {
-                          @if ($width >= 768) {
-                            font-size: 26px;
-                            line-height: 45px;
+                      }
+
+                      .carousel-inner {
+                        .carousel-item {
+                          &.active {
                           }
-                        }
-                        .sub-title {
-                          @if ($width >= 767) {
-                            font-size: 14px;
-                            padding-left: 15px;
-                            padding-right: 15px;
-                            line-height: 25px;
+
+                          .cr-bannar-layer {
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+
+                            .cr-bannar-body {
+                              height: 100%;
+
+                              color: #ffffff;
+
+                              .big-title {
+                                font-family: "Nunito Bold";
+                                font-size: 62px;
+                                line-height: 85px;
+                                text-transform: uppercase;
+                                div {
+                                  font-size: 42px;
+                                  font-family: "Nunito Bold";
+                                  line-height: 57px;
+                                  text-transform: uppercase;
+                                }
+                              }
+                              .sub-title {
+                                font-family: "Nunito SemiBold";
+                                font-size: 18px;
+                                line-height: 27px;
+                                text-align: justify;
+                                // height: 68px;
+                                white-space: pre-line;
+                              }
+
+                              .button {
+                                height: 100px;
+                                a {
+                                  border: 3px solid #e9d4d4;
+                                  font-family: "Nunito Bold";
+                                  font-size: 16px;
+                                  line-height: 22px;
+                                  color: #f2f2f2;
+                                  padding-left: 17px;
+                                  padding-right: 17px;
+                                  padding-top: 10px;
+                                  padding-bottom: 10px;
+                                }
+                              }
+                            }
                           }
                         }
                       }
@@ -162,71 +171,95 @@
       }
 
       &.about-us {
-        padding-top: #{make_for_mobile($width, 105)}px;
-        padding-bottom: #{make_for_mobile($width, 105)}px;
+        @if ($width >= 767) {
+          padding-top: #{make_for_mobile($width, 105)}px;
+          padding-bottom: #{make_for_mobile($width, 105)}px;
+        }
 
         .title {
-          font-size: 18px;
-          line-height: 35px;
+          @if ($width >= 767) {
+            font-size: 18px;
+            line-height: 38px;
+          }
+
           &::after {
             @if ($width >= 767) {
-              left: 48%;
+              left: 46%;
             }
           }
         }
 
         .subtitle {
-          @if ($width >= 768) {
+          @if ($width >= 767) {
             font-size: 14px;
-            line-height: 22px;
-          } @else if($width >= 424) {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
           }
         }
 
         .body {
+          @if ($width >= 767) {
+            margin-top: 30px;
+          }
+
           .bg-texture {
             .container {
               .row {
                 .col-sm-12 {
                   .image-section {
-                    @if ($width >= 768) {
-                      display: flex;
-                      justify-content: center;
-                    }
                     img {
-                      width: 100%;
+                      @if ($width >= 767) {
+                        width: 100%;
+                      }
                     }
                   }
 
                   .text-section {
-                    text-align: center;
-                    .subtitle {
-                      @if ($width >= 768) {
-                        text-align: center;
+                    @if ($width >= 767) {
+                      text-align: center;
+                    }
+                    .ab-title {
+                      @if ($width >= 767) {
+                        font-size: 16px;
+                        line-height: 25px;
                       }
-                      &::after {
-                        @if ($width >= 768) {
-                          top: 20%;
-                          //   right: 40%;
-                          left: 55%;
-                        } @else if($width >= 414) {
-                          top: 15%;
-                          left: 57%;
+                    }
+                    .ab-body {
+                      @if ($width >= 767) {
+                        font-size: 12px;
+                        line-height: 30px;
+                      }
+                    }
+
+                    .ab-service {
+                      padding-top: 15px;
+                      // padding-bottom: 15px;
+                      .ab-ser-title {
+                        @if ($width >= 767) {
+                          font-size: 16px;
+                          line-height: 20px;
+                        }
+                      }
+                      .service-list {
+                        ul {
+                          padding-left: 0px;
+                          margin-left: 0px;
+                          li {
+                            @if ($width >= 767) {
+                              font-size: 12px;
+                            }
+                          }
                         }
                       }
                     }
-                    .ab-title {
-                      font-size: 14px;
-                    }
-                    .ab-body {
-                      font-size: 12px;
-                    }
 
                     .read-more-sec {
+                      height: 54px;
+
                       a {
-                        span {
+                        @if ($width >= 767) {
+                          font-size: 14px;
+                          line-height: 11px;
                         }
                       }
                     }
@@ -238,64 +271,50 @@
         }
       }
 
-      &.our-services {
-        padding-top: #{make_for_mobile($width, 105)}px;
-        padding-bottom: #{make_for_mobile($width, 105)}px;
-
+      &.our-offers {
         .title {
           @if ($width >= 767) {
-            line-height: 35px;
             font-size: 18px;
+            line-height: 38px;
           }
 
           &::after {
-            @if ($width >= 767) {
-              left: 48%;
-            }
           }
         }
         .subtitle {
           @if ($width >= 767) {
             font-size: 14px;
-            line-height: 20px;
-          } @else if($width >= 424) {
-            padding-left: 20px;
-            padding-right: 20px;
+            line-height: 30px;
           }
         }
 
-        .services-with-image-section {
+        .our-offer-images-section {
+          @if ($width >= 767) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+          }
+
           .container {
             .row {
               .col-sm-12 {
-                .services {
-                  &.services-truck {
-                    margin-right: 0px;
-                    margin-left: 0px;
-                    margin-bottom: 15px;
-                  }
+                .offers {
+                  .offer-layer {
+                    @if ($width >= 767) {
+                      height: 300px;
+                      width: 100%;
+                    }
 
-                  &.services-oiltanker {
-                    margin-right: 0px;
-                    margin-left: 0px;
-                    margin-bottom: 15px;
-                  }
-
-                  &.services-cargo {
-                    margin-right: 0px;
-                    margin-left: 0px;
-                  }
-
-                  .service-layer {
                     .content {
-                      .logo {
-                        img {
-                        }
-                      }
-
                       .text {
                         @if ($width >= 767) {
                           font-size: 16px;
+                          line-height: 30px;
+                        }
+
+                        &:hover {
+                          &::after {
+                            left: -13%;
+                          }
                         }
                       }
                     }
@@ -307,243 +326,271 @@
         }
       }
 
-      // reason to choose us
-      &.reason-to-choose {
-        background-color: #c1d4d7;
+      &.why-clients-like-us {
+        .why-cl-layer {
+          @if ($width >= 767) {
+            height: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+          }
 
-        .all-services-count-section {
-          .container {
-            background-color: #d1dfe0;
-            padding-top: #{make_for_mobile($width, 105)}px;
-            padding-bottom: #{make_for_mobile($width, 105)}px;
+          .wh-cl-title {
+            @if ($width >= 767) {
+              font-size: 18px;
+              line-height: 25px;
+            }
 
-            .row {
-              .col-sm-12 {
-                .ser-section {
-                  .number {
-                    @if ($width >= 767) {
-                      font-size: 26px;
-                    }
+            &::after {
+              @if ($width >= 767) {
+                left: 35%;
+              }
+            }
+          }
+
+          .wh-cl-subtitle {
+            @if ($width >= 767) {
+              font-size: 14px;
+              line-height: 30px;
+              padding-bottom: 20px;
+            }
+          }
+
+          .wh-cl-body {
+            .container {
+              .row {
+                .col-sm-12 {
+                  @if ($width >= 767) {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
                   }
-                  .text {
-                    @if ($width >= 767) {
-                      font-size: 16px;
-                    }
-
-                    &::before {
-                      @if ($width >= 768) {
-                        bottom: 9%;
+                  .content {
+                    .logo {
+                      &:hover {
                       }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
+                      &.experience {
+                      }
 
-        .reason-to-choose-main {
-          flex-direction: column;
-          .left {
-            @if ($width >= 768) {
-              width: 100%;
-            }
+                      &.budge {
+                      }
 
-            @if ($width >= 768) {
-              padding-top: 230px;
-              padding-bottom: #{make_for_mobile($width, 105)}px;
-            }
+                      &.good-quality {
+                      }
 
-            .image-frame-section {
-              img {
-                width: 100%;
-                padding-left: 80px;
-                padding-right: 20px;
-              }
-            }
-          }
-          .right {
-            @if ($width >= 768) {
-              width: 100%;
-            }
-
-            @if ($width >= 768) {
-              padding-top: #{make_for_mobile($width, 105)}px;
-              padding-bottom: #{make_for_mobile($width, 105)}px;
-            }
-
-            .text-section {
-              padding-left: 30px;
-              .container {
-                .row {
-                  .col-12 {
-                    .sm-title {
-                      font-size: 12px;
+                      img {
+                      }
                     }
 
                     .title {
-                      font-size: 14px;
+                      @if ($width >= 767) {
+                        font-size: 14px;
+                        line-height: 30px;
+                      }
                     }
 
                     .subtitle {
-                      font-size: 12px;
-                    }
-
-                    .body {
-                      .sections {
-                        .logo {
-                          img {
-                            @if ($width >= 767) {
-                              width: 20px;
-                            }
-                          }
-                        }
-                        .text {
-                          .title {
-                            font-size: 14px;
-                          }
-
-                          .in-text {
-                          }
-                        }
-                      }
                     }
                   }
                 }
               }
             }
           }
-
-          .title-subtitle {
-            top: 2%;
-            width: 100%;
-            left: 0%;
-            .re-title {
-              font-size: 18px;
-
-              &::after {
-              }
-            }
-            .subtitle {
-              font-size: 14px;
-            }
-          }
         }
       }
 
-      &.clients-day {
-        @if ($width >= 768) {
+      &.our-team {
+        @if ($width >= 767) {
           padding-top: #{make_for_mobile($width, 105)}px;
           padding-bottom: #{make_for_mobile($width, 105)}px;
         }
 
-        .cl-title {
-          font-size: 18px;
+        .title {
+          @if ($width >= 767) {
+            font-size: 18px;
+            line-height: 35px;
+          }
 
           &::after {
             @if ($width >= 767) {
-              top: 10%;
-            } @else if($width >= 414) {
-              top: 8%;
-              left: 48%;
+              left: 47%;
             }
           }
         }
 
-        .cl-subtitle {
-          @if ($width >= 768) {
+        .subtitle {
+          @if ($width >= 767) {
             font-size: 14px;
-          } @else if($width >= 424) {
-            padding-left: 20px;
-            padding-right: 20px;
           }
         }
 
-        .clients-testimonial {
-          @if ($width >= 768) {
-            padding-top: #{make_for_mobile($width, 37)}px;
-            padding-bottom: #{make_for_mobile($width, 28)}px;
-            width: auto;
-            margin-left: 30px;
-            margin-right: 30px;
-          } @else if($width >= 414) {
-            margin-left: 20px;
-            margin-right: 20px;
-          }
-          .header {
-            display: flex;
-            margin-bottom: 40px;
-            .profile-image {
-              img {
-                width: 66px;
-                height: 66px;
-                border-radius: 50%;
-              }
-            }
+        .team-body {
+          .container {
+            .row {
+              .col-sm-12 {
+                .image-section {
+                  @if ($width >= 767) {
+                    margin-bottom: 30px;
+                  }
 
-            .other-info {
-              padding-left: 23px;
-              .name {
-                font-size: 14px;
-              }
-              .designation {
-                font-size: 12px;
-              }
-            }
-          }
+                  img {
+                  }
+                }
 
-          .body {
-            font-size: 12px;
+                .team-text-section {
+                  @if ($width >= 767) {
+                    text-align: center;
+                  }
+                  .title {
+                    @if ($width >= 767) {
+                      font-size: 16px;
+                      line-height: 30px;
+                    }
 
-            &::before {
-              content: url(../vendor/images/home/testimonial-quotes.svg);
-              height: 33px;
-              width: 33px;
-              position: absolute;
-              right: 0;
-              top: -50%;
+                    &::after {
+                      @if ($width >= 767) {
+                        top: -20%;
+                      }
+                    }
+                  }
+                  .content {
+                    @if ($width >= 767) {
+                      font-size: 12px;
+                      line-height: 30px;
+                    }
+                  }
+
+                  .join-us-button {
+                    @if($width >= 767){
+                      height: auto;
+                    }
+                    a {
+                      @if ($width >= 767) {
+                        font-size: 14px;
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }
       }
 
-      // all parters section
-      &.honorable-partners-section {
-        padding-top: #{make_for_mobile($width, 105)}px;
-        padding-bottom: #{make_for_mobile($width, 105)}px;
-
-        .title {
-          font-size: 18px;
+      &.testimonial {
+        .container {
+          @if ($width >= 767) {
+            padding-top: #{make_for_mobile($width, 105)}px;
+            padding-bottom: #{make_for_mobile($width, 105)}px;
+          }
 
           &::after {
-            @if ($width >= 767) {
-              top: 10%;
-            } @else if($width >= 414) {
-              top: 4%;
+          }
+          .row {
+            .col-sm-12 {
+              .main-body {
+                .title {
+                  @if ($width >= 767) {
+                    font-size: 18px;
+                    line-height: 30px;
+                  }
+
+                  &::after {
+                    content: "";
+                    background: #eb6551;
+                    position: absolute;
+                    bottom: -22%;
+                    left: 48%;
+                    height: 5px;
+                    width: 53px;
+                  }
+                }
+
+                .subtitle {
+                  @if ($width >= 767) {
+                    font-size: 14px;
+                  }
+                }
+
+                .tes-body {
+                  .header {
+                    .profile-image {
+                      img {
+                      }
+                    }
+
+                    .name-designation {
+                      .name {
+                        @if ($width >= 767) {
+                          font-size: 14px;
+                          line-height: 30px;
+                        }
+                      }
+                      .designation {
+                        @if ($width >= 767) {
+                          font-size: 12px;
+                          line-height: 30px;
+                        }
+                      }
+                    }
+                  }
+
+                  .body {
+                    @if ($width >= 767) {
+                      padding-left: #{make_for_mobile($width, 105)}px;
+                      padding-right: #{make_for_mobile($width, 105)}px;
+                    }
+
+                    &::after {
+                    }
+                    .content {
+                      @if ($width >= 767) {
+                        font-size: 14px;
+                        line-height: 30px;
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }
+      }
+
+      &.suppliers-and-partners {
+        @if ($width >= 767) {
+          padding-top: #{make_for_mobile($width, 105)}px;
+          padding-bottom: #{make_for_mobile($width, 105)}px;
+        }
+
+        &::after {
+        }
+        .title {
+          @if ($width >= 767) {
+            font-size: 18px;
+            line-height: 30px;
+          }
+
+          &::after {
+          }
+        }
+
         .subtitle {
-          @if ($width >= 768) {
+          @if ($width >= 767) {
             font-size: 14px;
-            margin-bottom: 0px;
-          } @else if($width >= 424) {
-            padding-left: 20px;
-            padding-right: 20px;
+            line-height: 30px;
           }
         }
 
         .body {
-          padding-top: #{make_for_mobile($width, 90)}px;
-          padding-bottom: #{make_for_mobile($width, 90)}px;
-          padding-left: #{make_for_mobile($width, 90)}px;
-          padding-right: #{make_for_mobile($width, 90)}px;
+          @if ($width >= 767) {
+            padding-left: #{make_for_mobile($width, 200)}px;
+            padding-right: #{make_for_mobile($width, 200)}px;
+          }
 
-          .all-partners {
-            .pr-company-logo {
+          .all-parteners {
+            .image-partner {
+              
               img {
-                width: auto;
-                height: 55px;
+               
               }
             }
           }
@@ -551,165 +598,214 @@
       }
 
       &.footer {
-        background-color: #526471;
-        color: #ffffff;
-
-        position: relative;
-
-        .newsletter-subscribtion {
-          width: auto;
-          @if ($width == 414) {
-            flex-direction: column;
-            height: 140px;
-          } @else if($width >= 767) {
-            flex-direction: row;
-          }
-
-          .left {
-            @if ($width == 414) {
-              width: 100%;
-              justify-content: center;
-              padding-bottom: 10px;
-            } @else if($width >= 767) {
-              width: 30%;
-            }
-
-            .title {
-              font-size: 16px;
-            }
-          }
-
-          .right {
-            @if ($width == 414) {
-              width: 100%;
-            } @else if($width >= 767) {
-              width: 70%;
-            }
-            form {
-              .input-group {
-                width: auto;
-                input {
-                }
-                .input-group-append {
-                  label {
-                    font-size: 14px;
-                    width: auto;
-                    height: auto;
-                  }
-                }
-              }
-            }
-          }
-        }
-
+        padding-top: 66px;
         .right-side-arrow {
-          position: absolute;
-          right: 2%;
-          top: 10%;
-
           .arrowup {
-            #arrow-up {
-              cursor: pointer;
+            .arrow-up {
               img {
-                width: 50px;
-                height: 50px;
               }
-            }
-          }
-        }
-
-        .right-side-text {
-          @if ($width >= 767) {
-            right: 0%;
-            bottom: 10%;
-          }
-          .text {
-            @if ($width >= 767) {
-              font-size: 12px;
             }
           }
         }
 
         .main-footer {
-          .container {
-            .row {
-              .col-sm-12 {
-                @if ($width >= 767) {
-                  padding-bottom: 20px;
-                }
+          @if ($width >= 768) {
+            flex-direction: column;
+          }
 
-                .title {
-                  @if ($width >= 767) {
+          .left {
+            padding-left: 100px;
+            padding-right: 100px;
+
+            background-color: #373737;
+            .container {
+              .row {
+                .col-sm-12 {
+                  .main-logo {
+                    padding-top: 65px;
+                    padding-bottom: 75px;
+                    img {
+                      height: 65px;
+                      width: auto;
+                    }
+                  }
+                  .title {
+                    font-family: "DM Sans Bold";
+                    font-size: 18px;
+                    line-height: 35px;
+                    color: #ffffff;
+                  }
+
+                  .subtitle {
+                    font-family: "DM Sans Regular";
                     font-size: 14px;
-                    padding-bottom: 5px;
+                    line-height: 21px;
+                    color: #ffffff;
                   }
-                }
-                .subtitle {
-                  @if ($width >= 767) {
+
+                  hr {
+                    background-color: #f2f2f2;
+                  }
+
+                  .mobile {
+                    font-family: "DM Sans Regular";
                     font-size: 12px;
-                  }
-                }
-
-                hr {
-                }
-
-                .mobile {
-                  &.usa {
-                  }
-
-                  &.bangladesh {
-                  }
-
-                  .logo {
-                    img {
-                    }
-                  }
-                  .text {
-                  }
-                }
-
-                .social-logos {
-                  @if ($width >= 767) {
-                    margin-top: 20px;
-                  }
-
-                  .logo {
-                    img {
-                    }
-                  }
-                }
-
-                .body {
-                  .section {
+                    line-height: 30px;
+                    color: #ffffff;
                     display: flex;
-                    @if ($width >= 767) {
-                      margin-bottom: 15px;
+                    &.use {
                     }
 
-                    .left {
-                      @if ($width >= 767) {
-                        margin-bottom: 20px;
-                      }
+                    &.bangladesh {
+                    }
 
-                      .place-name-logo {
-                        .logo {
-                        }
-                        .place-name {
-                          @if ($width >= 767) {
-                            font-size: 12px;
+                    .logo {
+                      padding-right: 10px;
+                      img {
+                        width: 15px;
+                        height: auto;
+                      }
+                    }
+
+                    .text {
+                      font-family: "DM Sans Regular";
+                      font-size: 12px;
+                      line-height: 30px;
+                      color: #ffffff;
+                    }
+                  }
+
+                  .social-logos {
+                    .logo {
+                      img {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .right {
+            background-color: #242424;
+            padding-right: 100px;
+            color: #ffffff;
+            padding-left: 100px;
+
+            .container {
+              .row {
+                .col-sm-12 {
+                  .newsletter-subscribtion {
+                    margin-top: 65px;
+                    background-color: #ffffff;
+                    box-shadow: 0px 15px 19px #12283970;
+                    height: auto;
+                    padding-left: 32px;
+                    padding-right: 32px;
+                    padding-top: 18px;
+                    padding-bottom: 18px;
+
+                    .title {
+                      font-family: "DM Sans Regular";
+                      font-size: 20px;
+                      line-height: 34px;
+                      color: #000000;
+                      padding-top: 10px;
+                      padding-bottom: 10px;
+                    }
+
+                    .right {
+                      background-color: rgba(255, 255, 255, 0.8);
+                      padding-left: 0px;
+                      padding-right: 0px;
+
+                      form {
+                        .input-group {
+                          width: 455px;
+                          border-radius: 5px;
+
+                          input {
+                            height: 65px;
+                            background-color: rgba(93, 55, 55, 0.18);
+                            &::placeholder {
+                              font-size: 18px;
+                              font-family: "DM Sans Bold";
+                              line-height: 34px;
+                              color: #f2f2f2;
+                            }
+                          }
+                          div {
+                            label {
+                              background-color: rgba(235, 101, 81, 0.8);
+                              padding-top: 11px;
+                              padding-bottom: 11px;
+                              padding-left: 25px;
+                              padding-right: 25px;
+                              color: #ffffff;
+                              font-family: "DM Sans Bold";
+                              font-size: 18px;
+                              line-height: 34px;
+                            }
                           }
                         }
                       }
                     }
+                  }
 
-                    .right {
-                      .address {
+                  .title {
+                    font-family: "DM Sans Bold";
+                    font-size: 18px;
+                    line-height: 34px;
+                    padding-top: 48px;
+                    padding-bottom: 24px;
+                  }
+
+                  .body {
+                    .section {
+                      display: flex;
+                      // align-items: center;
+                      padding-bottom: 20px;
+
+                      .left-sec {
+                        padding-right: 20px;
+                        .place-name-logo {
+                          display: flex;
+                          width: 100px;
+                          .logo {
+                            padding-right: 10px;
+
+                            img {
+                            }
+                          }
+
+                          .place-name {
+                          }
+                        }
                       }
-                      .cell {
-                        .logo {
+
+                      .right-sec {
+                        .address {
                         }
-                        .text {
+                        .cell {
+                          .logo {
+                            img {
+                            }
+                          }
                         }
+                      }
+                    }
+                  }
+
+                  .social-links {
+                    margin-top: 50px;
+                    margin-bottom: 40px;
+
+                    .links {
+                      display: flex;
+                      img {
+                        padding-right: 26px;
+                        width: auto;
+                        height: 23px;
                       }
                     }
                   }
@@ -720,32 +816,37 @@
         }
 
         .last-footer {
-          @if ($width >= 767) {
-            padding-left: #{make_for_mobile($width, 120)}px;
-            padding-right: #{make_for_mobile($width, 120)}px;
-            flex-direction: column;
-            padding-bottom: 20px;
-            margin-top: #{make_for_mobile($width, 58)}px;
-          }
+          background-color: #212020;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 145px;
+          padding-right: 145px;
 
           .left {
             ul {
-              @if ($width >= 767) {
-                flex-wrap: wrap;
-              }
-
+              display: flex;
+              padding-left: 0px;
+              margin-left: 0px;
               li {
-                @if ($width >= 767) {
-                  padding-right: 15px;
-                }
-
+                padding-left: 10px;
+                padding-right: 10px;
+                list-style: none;
                 a {
-                  @if ($width >= 767) {
-                    font-size: 12px;
-                  }
+                  font-family: "Poppin SemiBold";
+                  font-size: 14px;
+                  line-height: 51px;
+                  color: #f5f5f5;
+                  text-decoration: none;
                 }
               }
             }
+          }
+          .right {
+            color: #ffffff;
+            font-family: "Poppin Regular";
+            font-size: 16px;
+            line-height: 50px;
           }
         }
       }
