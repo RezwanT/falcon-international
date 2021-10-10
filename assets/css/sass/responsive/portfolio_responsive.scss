@@ -1,0 +1,63 @@
+@each $width in $responsive-width {
+  @media screen and (max-width: #{$width}px) {
+    section {
+      &.our-recent-projects {
+        @if ($width >= 767) {
+          padding-top: #{make_for_mobile($width, 105)}px;
+          padding-bottom: #{make_for_mobile($width, 105)}px;
+        }
+        .title {
+          @if ($width >= 767) {
+            font-size: 18px;
+            line-height: 48px;
+          }
+
+          &::after {
+          }
+        }
+
+        .subtitle {
+          @if ($width >= 767) {
+            font-size: 14px;
+            line-height: 30px;
+          }
+        }
+
+        .our-recent-projects-body {
+          @if ($width >= 767) {
+            margin-top: 30px;
+          }
+
+          .container {
+            .row {
+              .col-sm-12 {
+                .main-card-project-body {
+                  .image-section {
+                    .info-sections {
+                      .date {
+                      }
+
+                      .title {
+                        @if ($width >= 767) {
+                          font-size: 14px;
+                          line-height: 20px;
+                          padding-bottom: 10px;
+                          padding-top: 10px;
+                        }
+
+                        &::after {
+                          content: "";
+                          background: none;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

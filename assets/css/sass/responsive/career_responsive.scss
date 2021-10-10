@@ -1,0 +1,151 @@
+@each $width in $responsive-width {
+  @media screen and (max-width: #{$width}px) {
+    section {
+      &.our-purpose {
+        @if ($width >= 767) {
+          padding-top: #{make_for_mobile($width, 100)}px;
+        }
+
+        .our-pr-title {
+          @if ($width >= 767) {
+            font-size: 18px;
+            line-height: 48px;
+          }
+
+          &::after {
+          }
+        }
+
+        .our-pr-subtitle {
+          @if ($width >= 767) {
+            font-size: 14px;
+            line-height: 30px;
+          }
+        }
+
+        .our-purpose-body {
+          @if ($width >= 767) {
+            padding-top: #{make_for_mobile($width, 90)}px;
+          }
+          .container {
+            .row {
+              .col-sm-12 {
+                .text-section {
+                  @if ($width >= 767) {
+                    text-align: center;
+                  }
+                  .pr-body-title {
+                    @if ($width >= 767) {
+                      font-size: 16px;
+                      line-height: 30px;
+                      padding-bottom: 20px;
+                    }
+                  }
+
+                  .pr-body-content {
+                    @if ($width >= 767) {
+                      font-size: 12px;
+                      line-height: 30px;
+                    }
+                  }
+
+                  .pr-body-current-openning {
+                    @if ($width >= 767) {
+                      line-height: 30px;
+                    }
+                    a {
+                    }
+                  }
+                }
+
+                .image-section {
+                  @if ($width >= 767) {
+                    margin-top: 30px;
+                  }
+                  img {
+                    @if ($width >= 767) {
+                      height: 450px;
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.why-work-here {
+        @if ($width >= 767) {
+          padding-top: #{make_for_mobile($width, 100)}px;
+        }
+        .wh-title {
+          @if ($width >= 767) {
+            font-size: 18px;
+            line-height: 48px;
+          }
+
+          &::after {
+          }
+        }
+
+        .wh-subtitle {
+          @if ($width >= 767) {
+            font-size: 14px;
+            line-height: 30px;
+          }
+        }
+
+        .wh-body {
+          @if ($width >= 767) {
+            padding-top: #{make_for_mobile($width, 78)}px;
+          }
+          .container {
+            .row {
+              .col-sm-12 {
+                @if ($width >= 767) {
+                  padding-left: 17px;
+                  padding-right: 17px;
+                  padding-top: 17px;
+                  padding-bottom: 17px;
+                }
+
+                .wh-main-body {
+                  @if ($width >= 767) {
+                    height: 350px;
+                  }
+
+                  .logo {
+                    @if ($width >= 767) {
+                      width: 65px;
+                      height: 65px;
+
+                      margin-bottom: 30px;
+                    }
+
+                    img {
+                      @if ($width >= 767) {
+                        width: 25px;
+                        height: auto;
+                      }
+                    }
+                  }
+
+                  .title {
+                    @if ($width >= 767) {
+                      font-size: 14px;
+                      line-height: 30px;
+                    }
+                  }
+
+                  .content {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

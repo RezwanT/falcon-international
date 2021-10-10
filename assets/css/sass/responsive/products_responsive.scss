@@ -1,0 +1,109 @@
+@each $width in $responsive-width {
+  @media screen and (max-width: #{$width}px) {
+    section {
+      &.our-products {
+        @if ($width >= 767) {
+          padding-top: #{make_for_mobile($width, 105)}px;
+        }
+        .title {
+          @if ($width >= 767) {
+            font-size: 18px;
+            line-height: 48px;
+          }
+
+          &::after {
+          }
+        }
+
+        .subtitle {
+          @if ($width >= 767) {
+            font-size: 14px;
+            line-height: 30px;
+          }
+        }
+
+        .our-products-body {
+          @if ($width >= 767) {
+            padding-top: 30px;
+          }
+
+          .container {
+            .row {
+              .col-sm-12 {
+                .main-products-list {
+                  @if ($width >= 767) {
+                    margin-bottom: 50px;
+                  }
+                 
+                  .title {
+                      @if($width >= 767){
+                          font-size: 14px;
+                          line-height: 30px;
+                      }
+                   
+
+                    &::after {
+                      content: " ";
+                      background: none;
+                    }
+                  }
+
+                  .lists {
+                    ul {
+                    
+                      li {
+                        
+                        span {
+                          img {
+                           
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .container {
+                  .row {
+                    .col-12 {
+                      .sections {
+                          @if($width >= 767){
+                              margin-bottom: 30px;
+                          }
+                        
+                        .title {
+                            @if($width >= 767){
+                                font-size: 16px;
+                                margin-bottom: 20px;
+                            }
+                         
+                          &::after {
+                            content: "";
+                            background: none;
+                          }
+                        }
+
+                        .products {
+                          .container {
+                            .row {
+                              .col-sm-12 {
+                               
+                                img {
+                                 
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

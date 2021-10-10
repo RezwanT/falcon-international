@@ -1,0 +1,171 @@
+@each $width in $responsive-width {
+  @media screen and (max-width: #{$width}px) {
+    section {
+      &.get-in-touch {
+        @if ($width >= 767) {
+          padding-top: #{make_for_mobile($width, 100)}px;
+        }
+        .title {
+          @if ($width >= 767) {
+            font-size: 18px;
+            line-height: 48px;
+          }
+
+          &::after {
+          }
+        }
+
+        .subtitle {
+          @if ($width >= 767) {
+            font-size: 14px;
+            line-height: 30px;
+            padding-bottom: 30px;
+          }
+        }
+
+        .gt-body {
+          .container {
+            .row {
+              .col-sm-12 {
+                #map {
+                  @if ($width >= 767) {
+                    height: 400px;
+                    width: 100%;
+                    margin-bottom: 15px;
+                  }
+                }
+
+                .info-section {
+                  .section {
+                    .header {
+                      .logo {
+                        @if ($width >= 767) {
+                          padding-right: 15px;
+                        }
+
+                        img {
+                        }
+                      }
+
+                      .text {
+                        @if ($width >= 767) {
+                          font-size: 16px;
+                          line-height: 48px;
+                        }
+                      }
+                    }
+
+                    .content {
+                      .address {
+                        @if ($width >= 767) {
+                          font-size: 12px;
+                          line-height: 25px;
+                          padding-bottom: 10px;
+                        }
+
+                        span {
+                          @if ($width >= 767) {
+                            font-size: 14px;
+                            line-height: 25px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.feel-free-to-ask {
+        @if ($width >= 767) {
+          padding-top: #{make_for_mobile($width, 105)}px;
+          padding-bottom: #{make_for_mobile($width, 105)}px;
+        }
+
+        .fl-fr-title {
+          @if ($width >= 767) {
+            font-size: 18px;
+            line-height: 48px;
+          }
+
+          &::after {
+          }
+        }
+
+        .fl-fr-subtitle {
+          @if ($width >= 767) {
+            font-size: 14px;
+            line-height: 30px;
+          }
+        }
+
+        .fl-fr-body {
+          @if ($width >= 767) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+          }
+
+          &::after {
+          }
+
+          .form {
+            @if ($width >= 767) {
+              width: 100%;
+              height: auto;
+            }
+
+            form {
+              .c-form-row {
+                &.d-flex {
+                  .form-group {
+                    &.left {
+                    }
+                    &.right {
+                    }
+                  }
+                }
+                &.button {
+                  @if ($width >= 767) {
+                    margin-top: 30px;
+                  }
+
+                  button {
+                    @if ($width >= 767) {
+                      width: 150px;
+                      height: 40px;
+                      font-size: 12px;
+                      line-height: 30px;
+                    }
+                  }
+                }
+
+                .form-group {
+                  label {
+                    @if ($width >= 767) {
+                      font-size: 14px;
+                      line-height: 30px;
+                    }
+                  }
+                  input {
+                    @if ($width >= 767) {
+                      height: 40px;
+                    }
+                  }
+
+                  textarea {
+                    @if ($width >= 767) {
+                      height: 130px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
