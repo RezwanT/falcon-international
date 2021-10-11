@@ -18,9 +18,9 @@
 section {
   &.header {
     .topnav {
+      background-color: #f5eded;
       .navbar {
-        background-color: #fdfdfd !important;
-        height: 130px;
+        height: 100px;
         .navbar-toggler {
         }
 
@@ -36,9 +36,23 @@ section {
                 padding-right: 7px;
                 .nav-link {
                   font-family: "DM Sans Medium";
+                  font-size: 15px;
                   color: #000000;
-                  line-height: 51px;
+                  line-height: 20px;
                   letter-spacing: 1.37px;
+                  position: relative;
+
+                  &:hover {
+                    &::after {
+                      content: "";
+                      background: #eb6551;
+                      position: absolute;
+                      bottom: 0;
+                      left: 25%;
+                      height: 3px;
+                      width: 25px;
+                    }
+                  }
                 }
               }
             }
@@ -52,7 +66,7 @@ section {
         }
 
         .mobile-nav {
-          height: 100%;
+          height: auto;
           width: 0;
           position: fixed;
           z-index: 1;
@@ -61,6 +75,7 @@ section {
           background-color: #ffffff;
           overflow: hidden;
           transition: 0.5s;
+          
         }
       }
     }
@@ -99,8 +114,8 @@ section {
                       border-radius: 50%;
                       margin-left: 10px;
                       margin-right: 10px;
-                      &.active{
-                        background-color: #EB6551;
+                      &.active {
+                        background-color: #eb6551;
                       }
                     }
                   }
@@ -220,6 +235,8 @@ section {
           .row {
             .col-sm-12 {
               .image-section {
+                display: flex;
+                justify-content: flex-end;
                 img {
                   height: 485px;
                 }
@@ -355,8 +372,8 @@ section {
                     color: #f2f2f2;
                     cursor: pointer;
                     position: relative;
-                    &:hover{
-                      &::after{
+                    &:hover {
+                      &::after {
                         content: "";
                         background: #eb6551;
                         position: absolute;
@@ -692,7 +709,7 @@ section {
     padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
-    &::after{
+    &::after {
       content: "";
       background: url(../vendor/images/home/supply-partners-top-icon.svg);
       position: absolute;
@@ -865,35 +882,33 @@ section {
                 }
 
                 .right {
-                  background-color: rgba(255, 255, 255, .8);
+                  background-color: rgba(255, 255, 255, 0.8);
                   padding-left: 0px;
                   padding-right: 0px;
-
 
                   form {
                     .input-group {
                       width: 455px;
                       border-radius: 5px;
-                      
+
                       input {
                         height: 65px;
-                        background-color: rgba(93, 55, 55, .18);
-                        &::placeholder{
+                        background-color: rgba(93, 55, 55, 0.18);
+                        &::placeholder {
                           font-size: 18px;
                           font-family: "DM Sans Bold";
                           line-height: 34px;
-                          color: #F2F2F2;
+                          color: #f2f2f2;
                         }
-
                       }
-                      div{
-                        label{
-                          background-color: rgba(235, 101, 81, .8);
+                      div {
+                        label {
+                          background-color: rgba(235, 101, 81, 0.8);
                           padding-top: 11px;
                           padding-bottom: 11px;
                           padding-left: 25px;
                           padding-right: 25px;
-                          color: #FFFFFF;
+                          color: #ffffff;
                           font-family: "DM Sans Bold";
                           font-size: 18px;
                           line-height: 34px;
@@ -948,13 +963,13 @@ section {
                 }
               }
 
-              .social-links{
+              .social-links {
                 margin-top: 50px;
                 margin-bottom: 40px;
-              
-                .links{
+
+                .links {
                   display: flex;
-                  img{
+                  img {
                     padding-right: 26px;
                     width: auto;
                     height: 23px;
@@ -988,18 +1003,17 @@ section {
               font-family: "Poppin SemiBold";
               font-size: 14px;
               line-height: 51px;
-              color: #F5F5F5;
+              color: #f5f5f5;
               text-decoration: none;
             }
           }
         }
       }
-      .right{
-        color: #FFFFFF;
+      .right {
+        color: #ffffff;
         font-family: "Poppin Regular";
         font-size: 16px;
         line-height: 50px;
-
       }
     }
   }
